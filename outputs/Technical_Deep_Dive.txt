@@ -1,0 +1,28 @@
+# 🚀 HACKERRANK ORCHESTRATE: TECHNICAL DEEP DIVE
+
+## 1. THE CORE PHILOSOPHY: "SAFETY OVER CLEVERNESS"
+The agent is designed as a Triage State Machine. It prioritizes precision (correctness) over recall (guessing). If confidence is low or risk is high, it escalates to a human. Zero-hallucination is the primary goal.
+
+## 2. COMPONENT ARCHITECTURE
+- CLASSIFIERS: Regex-based risk detection for 100% reliability on security issues. Keyword-based domain routing to enforce corpus boundaries.
+- CHUNKER: Section-based splitting (by ## headers) to keep context manageable. Title-injection in every chunk to maintain document metadata.
+- SEARCH ENGINE: Hybrid engine combining BM25 (Exact Keywords) and Sentence-Transformers (Semantic Meaning).
+- GENERATOR: Local Llama 3 (Ollama) with a strict grounding prompt.
+
+## 3. THE "SECRET SAUCE" (KEY INNOVATIONS)
+- SEMANTIC FLOOR (0.25): A deterministic threshold that prevents the agent from answering irrelevant queries (like "Pizza" or "Sky").
+- HEADING-BASED HYPER-BOOSTING (+1.0): A custom algorithm that detects "Action Verbs" (remove, delete, stolen) in section headings and prioritizes those chunks.
+- PATH-BASED PRIORITY: Logic that penalizes Release Notes (-0.5) and boosts Support Guides (+0.3) to ensure users get actionable instructions.
+- DOMAIN ISOLATION: A pre-search filter that makes it physically impossible for the agent to retrieve docs from the wrong company.
+
+## 4. PERFORMANCE TUNING
+- TOP-7 CONTEXT: Balanced the "Context Window" to provide enough data for the LLM while keeping latency low.
+- CONTEXT CLEANING: Aggressive stripping of Markdown frontmatter and whitespace to reduce token count and speed up local inference.
+- LLM TIMEOUT (120s): Increased the safety margin for the local Ollama instance to handle large multi-chunk queries.
+
+## 5. AI COLLABORATION (HUMAN-STEERED)
+- HUMAN ROLE: Architect and Auditor. Designed the state machine, identified the "Remove Employee" edge case, and directed the boosting algorithm.
+- AI ROLE: Builder and Implementer. Generated boilerplate code, handled library integrations, and performed high-speed debugging.
+
+---
+Prepared for Sujith Putta | Project: HackerRank Orchestrate Triage Agent

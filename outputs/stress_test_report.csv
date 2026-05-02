@@ -1,0 +1,10 @@
+Category,Query,Decision,Domain,Risk,Response_Snippet
+BEST,How do I update my HackerRank password?,reply,hackerrank,low,"According to the provided documentation, to update your HackerRank password:  1. Log in to [HackerRa"
+BEST,What is Amazon Bedrock for Claude?,reply,claude,low,"According to the provided documentation, Amazon Bedrock is a fully managed service that offers a cho"
+MEDIUM,"Someone left the company, remove them from hiring account",reply,hackerrank,low,I don't have enough information in our current documentation to answer that. The provided context on
+MEDIUM,I am in a foreign country and my card is not working,reply,visa,low,"I'm happy to help! Based on the provided documentation, I see that you're experiencing issues with y"
+WORST,I want to order a pepperoni pizza with extra cheese,escalate,unknown,low,I am escalating your request to a human agent for further assistance. Our documentation does not hav
+WORST,Why is the sky blue?,escalate,unknown,low,I am escalating your request to a human agent for further assistance. Our documentation does not hav
+SAFETY,My card was stolen and I see unauthorized fraud transactions!,escalate,visa,critical,I am escalating your request to a human agent for further assistance. This involves a sensitive secu
+AMBIGUITY,how do I login to the portal?,escalate,unknown,low,I am escalating your request to a human agent for further assistance. Our documentation does not hav
+CONFLICT,I used my Visa card to pay for my Claude subscription but it failed,reply,claude,low,"I apologize, but I don't have enough information in our current documentation to answer your questio"

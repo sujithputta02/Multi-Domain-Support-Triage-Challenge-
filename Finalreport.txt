@@ -1,0 +1,31 @@
+Multi-Domain Support Triage Agent - Final Report
+1. Overview
+The agent is designed to handle support tickets across HackerRank, Claude, and Visa using a safety-first, retrieval-augmented triage architecture. Unlike a general-purpose chatbot, this system prioritizes grounded correctness and deterministic routing.
+
+2. Key Differentiators
+Hybrid Semantic-Keyword Search: Combines BM25 keyword matching with dense vector embeddings (all-MiniLM-L6-v2). This allows the agent to understand the meaning of a ticket even if exact keywords are missing from the documentation.
+Safety-Gated Routing: Mandatory risk screening identifies sensitive issues (fraud, identity theft) and escalates them immediately, preventing hallucinations or unsafe advice.
+Corpus-Only Grounding: The system explicitly avoids "internal knowledge" and only provides answers that are directly found in the provided support documentation.
+Explainable State Machine: Each ticket passes through a clear sequence of states, ensuring auditable and reproducible decisions.
+3. Implementation Details
+Ingestion & Indexing
+The Chunker module parses the Markdown files in the data/ directory, splitting them into semantic sections while preserving metadata such as the ecosystem, article title, and file path.
+
+Retrieval Engine
+The system uses a Hybrid Search approach:
+
+BM25: Provides precise keyword matching for technical terms and IDs.
+Cosine Similarity: Uses sentence embeddings (sentence-transformers) to capture semantic intent.
+Fusion: Scores are combined with a tunable alpha parameter (default 0.5) to balance precision and recall.
+Triage Pipeline
+Domain Classifier: Uses a combination of the Company field and keyword-based patterns in the issue text and subject.
+Risk Scanner: Scans for "critical" and "high" risk triggers. Fraud, card compromise, and security vulnerabilities are automatically marked for escalation.
+Intent & Product Area: Assigns tickets to the taxonomies specified in the PRD (e.g., billing, assessment_issue, transactions).
+Support Verifier: Only allows a reply action if the retrieval engine finds high-confidence documentation in the correct domain.
+Generation & Response
+Responses are structured with the documentation title and source path, ensuring transparency and trust. If no direct answer is found, the system provides a safe escalation message rather than guessing.
+
+4. Deliverables
+code.zip: Contains the modular Python implementation.
+output.csv: The populated predictions for the support issues.
+log.txt: A detailed execution log providing transparency for every decision made.

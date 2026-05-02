@@ -1,0 +1,1877 @@
+2026-05-01 21:57:49,859 - main - INFO - Starting ingestion...
+2026-05-01 21:57:49,962 - main - INFO - Ingested 5731 chunks.
+2026-05-01 21:57:49,962 - main - INFO - Initializing search engine...
+2026-05-01 21:57:50,069 - main - INFO - Initializing pipeline...
+2026-05-01 21:57:50,069 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 21:57:50,125 - main - INFO - Processing 29 tickets...
+2026-05-01 21:57:50,163 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 21:57:50,163 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,163 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,183 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,183 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,183 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,200 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 21:57:50,200 - main - INFO - Justification: High risk detected: refund
+2026-05-01 21:57:50,200 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,208 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 21:57:50,208 - main - INFO - Justification: High risk detected: refund
+2026-05-01 21:57:50,208 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,216 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,216 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,216 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,230 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,230 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,230 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,235 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,235 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,235 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,243 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,243 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,243 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,266 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,266 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,266 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,298 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,298 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,298 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,344 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,344 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,344 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,344 - main - ERROR - Error processing ticket 11: 'float' object has no attribute 'lower'
+2026-05-01 21:57:50,364 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,364 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,364 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,371 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,371 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,371 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,376 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 21:57:50,376 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,376 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,381 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 21:57:50,381 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 21:57:50,381 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,385 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,385 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,385 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,396 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,396 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,396 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,399 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 21:57:50,399 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,399 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,408 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 21:57:50,408 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 21:57:50,408 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,412 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 21:57:50,412 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,412 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,420 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 21:57:50,421 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,421 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,431 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 21:57:50,431 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,431 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,431 - main - ERROR - Error processing ticket 23: 'float' object has no attribute 'lower'
+2026-05-01 21:57:50,452 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 21:57:50,452 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 21:57:50,452 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,462 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 21:57:50,462 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,462 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,472 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 21:57:50,473 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,473 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,483 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 21:57:50,483 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,483 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,496 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 21:57:50,496 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:57:50,496 - main - INFO - ----------------------------------------
+2026-05-01 21:57:50,500 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 21:57:50,501 - main - INFO - Done.
+2026-05-01 21:58:45,445 - main - INFO - Starting ingestion...
+2026-05-01 21:58:45,550 - main - INFO - Ingested 5731 chunks.
+2026-05-01 21:58:45,551 - main - INFO - Initializing search engine...
+2026-05-01 21:58:45,651 - main - INFO - Initializing pipeline...
+2026-05-01 21:58:45,652 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 21:58:45,664 - main - INFO - Processing 29 tickets...
+2026-05-01 21:58:45,697 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 21:58:45,697 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,697 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,748 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,748 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,748 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,775 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 21:58:45,775 - main - INFO - Justification: High risk detected: refund
+2026-05-01 21:58:45,775 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,782 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 21:58:45,782 - main - INFO - Justification: High risk detected: refund
+2026-05-01 21:58:45,782 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,793 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,793 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,793 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,808 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,808 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,808 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,814 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,814 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,814 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,821 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,821 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,821 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,845 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,845 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,845 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,877 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,877 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,877 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,923 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,923 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,923 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,925 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-01 21:58:45,926 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 21:58:45,926 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,947 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,947 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,947 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,955 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,955 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,955 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,960 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 21:58:45,960 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,960 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,965 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 21:58:45,966 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 21:58:45,966 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,968 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,968 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,968 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,979 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:45,979 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,979 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,983 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 21:58:45,983 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,983 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,991 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 21:58:45,991 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 21:58:45,991 - main - INFO - ----------------------------------------
+2026-05-01 21:58:45,996 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 21:58:45,996 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:45,996 - main - INFO - ----------------------------------------
+2026-05-01 21:58:46,004 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 21:58:46,004 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:46,004 - main - INFO - ----------------------------------------
+2026-05-01 21:58:46,015 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 21:58:46,015 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:46,015 - main - INFO - ----------------------------------------
+2026-05-01 21:58:46,021 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-01 21:58:46,021 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 21:58:46,021 - main - INFO - ----------------------------------------
+2026-05-01 21:58:46,040 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 21:58:46,040 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 21:58:46,040 - main - INFO - ----------------------------------------
+2026-05-01 21:58:46,050 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 21:58:46,050 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:46,050 - main - INFO - ----------------------------------------
+2026-05-01 21:58:46,061 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 21:58:46,061 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:46,061 - main - INFO - ----------------------------------------
+2026-05-01 21:58:46,071 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 21:58:46,071 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:46,071 - main - INFO - ----------------------------------------
+2026-05-01 21:58:46,083 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 21:58:46,083 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:58:46,083 - main - INFO - ----------------------------------------
+2026-05-01 21:58:46,086 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 21:58:46,088 - main - INFO - Done.
+2026-05-01 21:59:18,942 - main - INFO - Starting ingestion...
+2026-05-01 21:59:18,990 - main - INFO - Ingested 5731 chunks.
+2026-05-01 21:59:18,990 - main - INFO - Initializing search engine...
+2026-05-01 21:59:19,092 - main - INFO - Initializing pipeline...
+2026-05-01 21:59:19,092 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 21:59:19,096 - main - INFO - Processing 29 tickets...
+2026-05-01 21:59:19,122 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 21:59:19,123 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,123 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,141 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,141 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,141 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,157 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 21:59:19,157 - main - INFO - Justification: High risk detected: refund
+2026-05-01 21:59:19,157 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,163 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 21:59:19,163 - main - INFO - Justification: High risk detected: refund
+2026-05-01 21:59:19,163 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,171 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,171 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,171 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,183 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,183 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,183 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,188 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,188 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,188 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,198 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,198 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,198 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,222 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,222 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,222 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,254 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,255 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,255 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,303 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,303 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,303 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,306 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-01 21:59:19,306 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 21:59:19,306 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,326 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,326 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,326 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,334 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,334 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,334 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,340 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 21:59:19,340 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,340 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,345 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 21:59:19,345 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 21:59:19,345 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,348 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,348 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,348 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,361 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,361 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,361 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,365 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 21:59:19,365 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,365 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,373 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 21:59:19,373 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 21:59:19,373 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,379 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 21:59:19,379 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,379 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,388 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 21:59:19,388 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,388 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,400 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 21:59:19,400 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,400 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,407 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-01 21:59:19,408 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 21:59:19,408 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,427 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 21:59:19,427 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 21:59:19,427 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,437 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 21:59:19,437 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,437 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,446 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 21:59:19,446 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,446 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,456 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 21:59:19,456 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,456 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,469 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 21:59:19,469 - main - INFO - Justification: Direct documentation found.
+2026-05-01 21:59:19,469 - main - INFO - ----------------------------------------
+2026-05-01 21:59:19,475 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 21:59:19,477 - main - INFO - Done.
+2026-05-01 22:00:10,942 - main - INFO - Starting ingestion...
+2026-05-01 22:00:10,985 - main - INFO - Ingested 5731 chunks.
+2026-05-01 22:00:10,985 - main - INFO - Initializing search engine...
+2026-05-01 22:00:11,108 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-01 22:00:11,108 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-01 22:00:39,982 - main - INFO - Initializing pipeline...
+2026-05-01 22:00:39,982 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 22:00:39,992 - main - INFO - Processing 29 tickets...
+2026-05-01 22:00:40,173 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 22:00:40,173 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:40,173 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,246 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:40,246 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:40,246 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,290 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 22:00:40,290 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:00:40,290 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,328 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 22:00:40,328 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:00:40,328 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,363 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:40,363 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:40,363 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,406 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:40,406 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:40,406 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,441 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:40,441 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:40,441 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,672 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:40,672 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:40,672 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,725 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:40,725 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:40,725 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,864 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:40,864 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:40,864 - main - INFO - ----------------------------------------
+2026-05-01 22:00:40,946 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:40,946 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:40,946 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,111 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-01 22:00:41,111 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:00:41,111 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,158 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:41,158 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,158 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,192 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:41,192 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,192 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,226 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 22:00:41,226 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,226 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,245 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 22:00:41,245 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 22:00:41,245 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,503 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:41,503 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,503 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,543 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:41,543 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,543 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,576 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 22:00:41,576 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,576 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,597 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 22:00:41,597 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 22:00:41,597 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,615 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 22:00:41,615 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,615 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,653 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 22:00:41,653 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,653 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,677 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 22:00:41,677 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,677 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,699 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-01 22:00:41,699 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:00:41,699 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,747 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 22:00:41,747 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 22:00:41,747 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,781 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 22:00:41,781 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,781 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,815 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 22:00:41,815 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,815 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,837 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 22:00:41,837 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,837 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,878 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 22:00:41,879 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:00:41,879 - main - INFO - ----------------------------------------
+2026-05-01 22:00:41,880 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 22:00:41,882 - main - INFO - Done.
+2026-05-01 22:07:07,711 - main - INFO - Starting ingestion...
+2026-05-01 22:07:07,827 - main - INFO - Ingested 5731 chunks.
+2026-05-01 22:07:07,827 - main - INFO - Initializing search engine...
+2026-05-01 22:07:07,948 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-01 22:07:07,948 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-01 22:07:38,348 - main - INFO - Initializing pipeline...
+2026-05-01 22:07:38,349 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 22:07:38,359 - main - INFO - Processing 29 tickets...
+2026-05-01 22:07:38,410 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 22:07:38,410 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,410 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,454 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,454 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,454 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,494 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 22:07:38,494 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:07:38,494 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,524 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 22:07:38,524 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:07:38,524 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,555 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,555 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,555 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,593 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,593 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,593 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,623 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,623 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,623 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,656 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,656 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,656 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,700 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,700 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,700 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,757 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,757 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,757 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,846 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,846 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,846 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,878 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-01 22:07:38,878 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:07:38,878 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,922 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,922 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,922 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,953 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:38,953 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,953 - main - INFO - ----------------------------------------
+2026-05-01 22:07:38,987 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 22:07:38,987 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:38,987 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,007 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 22:07:39,007 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 22:07:39,007 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,036 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:39,036 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,036 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,071 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:39,071 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,071 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,103 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 22:07:39,103 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,103 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,123 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 22:07:39,123 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 22:07:39,123 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,143 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 22:07:39,143 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,143 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,176 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 22:07:39,176 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,176 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,200 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 22:07:39,200 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,200 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,222 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-01 22:07:39,222 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:07:39,222 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,270 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 22:07:39,270 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 22:07:39,270 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,309 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 22:07:39,309 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,309 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,362 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 22:07:39,362 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,363 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,384 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 22:07:39,384 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,384 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,422 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 22:07:39,422 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:07:39,422 - main - INFO - ----------------------------------------
+2026-05-01 22:07:39,424 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 22:07:39,426 - main - INFO - Done.
+2026-05-01 22:10:29,799 - main - INFO - Starting ingestion...
+2026-05-01 22:10:29,905 - main - INFO - Ingested 5731 chunks.
+2026-05-01 22:10:29,905 - main - INFO - Initializing search engine...
+2026-05-01 22:10:30,027 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-01 22:10:30,027 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-01 22:11:10,773 - main - INFO - Initializing pipeline...
+2026-05-01 22:11:10,773 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 22:11:10,782 - main - INFO - Processing 29 tickets...
+2026-05-01 22:11:10,842 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 22:11:10,842 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:10,842 - main - INFO - ----------------------------------------
+2026-05-01 22:11:10,885 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:10,885 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:10,885 - main - INFO - ----------------------------------------
+2026-05-01 22:11:10,927 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 22:11:10,927 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:11:10,927 - main - INFO - ----------------------------------------
+2026-05-01 22:11:10,959 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 22:11:10,959 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:11:10,959 - main - INFO - ----------------------------------------
+2026-05-01 22:11:10,992 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:10,992 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:10,992 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,029 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,029 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,029 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,061 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,061 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,061 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,097 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,097 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,097 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,145 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,145 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,145 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,202 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,202 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,202 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,282 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,282 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,282 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,313 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-01 22:11:11,313 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:11:11,313 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,358 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,358 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,358 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,388 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,388 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,388 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,421 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 22:11:11,421 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,421 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,440 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 22:11:11,440 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 22:11:11,440 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,468 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,468 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,468 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,506 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,506 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,506 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,535 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 22:11:11,535 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,535 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,556 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 22:11:11,556 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 22:11:11,556 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,575 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 22:11:11,575 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,575 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,608 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 22:11:11,608 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,608 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,631 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 22:11:11,632 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,632 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,653 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-01 22:11:11,653 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:11:11,653 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,701 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 22:11:11,701 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 22:11:11,701 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,734 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 22:11:11,734 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,734 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,770 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 22:11:11,770 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,770 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,791 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 22:11:11,791 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,792 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,831 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 22:11:11,831 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:11:11,831 - main - INFO - ----------------------------------------
+2026-05-01 22:11:11,832 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 22:11:11,834 - main - INFO - Done.
+2026-05-01 22:15:26,533 - main - INFO - Starting ingestion...
+2026-05-01 22:15:26,642 - main - INFO - Ingested 5731 chunks.
+2026-05-01 22:15:26,642 - main - INFO - Initializing search engine...
+2026-05-01 22:15:26,840 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-01 22:15:26,840 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-01 22:15:58,901 - main - INFO - Initializing pipeline...
+2026-05-01 22:15:58,902 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 22:15:58,915 - main - INFO - Processing 29 tickets...
+2026-05-01 22:16:00,004 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 22:16:00,004 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:00,004 - main - INFO - ----------------------------------------
+2026-05-01 22:16:00,161 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:00,162 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:00,162 - main - INFO - ----------------------------------------
+2026-05-01 22:16:00,211 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 22:16:00,211 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:16:00,211 - main - INFO - ----------------------------------------
+2026-05-01 22:16:00,271 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 22:16:00,271 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:16:00,271 - main - INFO - ----------------------------------------
+2026-05-01 22:16:00,332 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:00,332 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:00,332 - main - INFO - ----------------------------------------
+2026-05-01 22:16:00,380 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:00,380 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:00,380 - main - INFO - ----------------------------------------
+2026-05-01 22:16:00,635 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:00,635 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:00,635 - main - INFO - ----------------------------------------
+2026-05-01 22:16:00,909 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:00,909 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:00,909 - main - INFO - ----------------------------------------
+2026-05-01 22:16:00,967 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:00,967 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:00,967 - main - INFO - ----------------------------------------
+2026-05-01 22:16:01,143 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:01,143 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:01,143 - main - INFO - ----------------------------------------
+2026-05-01 22:16:01,378 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:01,378 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:01,378 - main - INFO - ----------------------------------------
+2026-05-01 22:16:01,623 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-01 22:16:01,623 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:16:01,623 - main - INFO - ----------------------------------------
+2026-05-01 22:16:01,676 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:01,676 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:01,676 - main - INFO - ----------------------------------------
+2026-05-01 22:16:01,711 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:01,711 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:01,711 - main - INFO - ----------------------------------------
+2026-05-01 22:16:01,968 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 22:16:01,968 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:01,968 - main - INFO - ----------------------------------------
+2026-05-01 22:16:01,989 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 22:16:01,989 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 22:16:01,989 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,305 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:02,306 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:02,306 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,346 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:02,346 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:02,346 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,670 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 22:16:02,670 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:02,670 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,694 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 22:16:02,694 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 22:16:02,694 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,715 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 22:16:02,715 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:02,715 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,751 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 22:16:02,752 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:02,752 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,778 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 22:16:02,779 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:02,779 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,804 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-01 22:16:02,804 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:16:02,804 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,896 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 22:16:02,896 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 22:16:02,896 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,933 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 22:16:02,933 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:02,933 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,972 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 22:16:02,972 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:02,972 - main - INFO - ----------------------------------------
+2026-05-01 22:16:02,995 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 22:16:02,995 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:02,995 - main - INFO - ----------------------------------------
+2026-05-01 22:16:03,036 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 22:16:03,036 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:16:03,036 - main - INFO - ----------------------------------------
+2026-05-01 22:16:03,038 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 22:16:03,040 - main - INFO - Done.
+2026-05-01 22:17:36,414 - main - INFO - Starting ingestion...
+2026-05-01 22:17:36,520 - main - INFO - Ingested 5731 chunks.
+2026-05-01 22:17:36,520 - main - INFO - Initializing search engine...
+2026-05-01 22:17:36,732 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-01 22:17:36,733 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-01 22:18:08,058 - main - INFO - Initializing pipeline...
+2026-05-01 22:18:08,058 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 22:18:08,071 - main - INFO - Processing 29 tickets...
+2026-05-01 22:18:08,146 - triage - INFO - Generating LLM response for ticket 0...
+2026-05-01 22:18:18,482 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 22:18:18,483 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:18:18,483 - main - INFO - ----------------------------------------
+2026-05-01 22:18:18,679 - triage - INFO - Generating LLM response for ticket 1...
+2026-05-01 22:18:30,878 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 22:18:30,879 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:18:30,879 - main - INFO - ----------------------------------------
+2026-05-01 22:18:30,978 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 22:18:30,978 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:18:30,978 - main - INFO - ----------------------------------------
+2026-05-01 22:18:31,016 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 22:18:31,016 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:18:31,016 - main - INFO - ----------------------------------------
+2026-05-01 22:18:31,057 - triage - INFO - Generating LLM response for ticket 4...
+2026-05-01 22:18:37,100 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 22:18:37,101 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:18:37,101 - main - INFO - ----------------------------------------
+2026-05-01 22:18:37,193 - triage - INFO - Generating LLM response for ticket 5...
+2026-05-01 22:18:45,546 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 22:18:45,546 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:18:45,546 - main - INFO - ----------------------------------------
+2026-05-01 22:18:45,674 - triage - INFO - Generating LLM response for ticket 6...
+2026-05-01 22:18:50,798 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 22:18:50,798 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:18:50,798 - main - INFO - ----------------------------------------
+2026-05-01 22:18:50,871 - triage - INFO - Generating LLM response for ticket 7...
+2026-05-01 22:18:56,416 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 22:18:56,417 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:18:56,417 - main - INFO - ----------------------------------------
+2026-05-01 22:18:56,519 - triage - INFO - Generating LLM response for ticket 8...
+2026-05-01 22:19:10,329 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 22:19:10,330 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:19:10,330 - main - INFO - ----------------------------------------
+2026-05-01 22:19:10,576 - triage - INFO - Generating LLM response for ticket 9...
+2026-05-01 22:19:18,019 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 22:19:18,020 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:19:18,020 - main - INFO - ----------------------------------------
+2026-05-01 22:19:18,186 - triage - INFO - Generating LLM response for ticket 10...
+2026-05-01 22:19:28,636 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 22:19:28,636 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:19:28,636 - main - INFO - ----------------------------------------
+2026-05-01 22:19:28,768 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-01 22:19:28,768 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:19:28,768 - main - INFO - ----------------------------------------
+2026-05-01 22:19:28,827 - triage - INFO - Generating LLM response for ticket 12...
+2026-05-01 22:19:45,020 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 22:19:45,020 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:19:45,020 - main - INFO - ----------------------------------------
+2026-05-01 22:19:45,187 - triage - INFO - Generating LLM response for ticket 13...
+2026-05-01 22:19:49,319 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 22:19:49,319 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:19:49,319 - main - INFO - ----------------------------------------
+2026-05-01 22:19:49,409 - triage - INFO - Generating LLM response for ticket 14...
+2026-05-01 22:19:55,165 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 22:19:55,165 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:19:55,165 - main - INFO - ----------------------------------------
+2026-05-01 22:19:55,258 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 22:19:55,258 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 22:19:55,258 - main - INFO - ----------------------------------------
+2026-05-01 22:19:55,295 - triage - INFO - Generating LLM response for ticket 16...
+2026-05-01 22:20:00,639 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 22:20:00,639 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:20:00,639 - main - INFO - ----------------------------------------
+2026-05-01 22:20:00,745 - triage - INFO - Generating LLM response for ticket 17...
+2026-05-01 22:20:05,639 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 22:20:05,639 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:20:05,639 - main - INFO - ----------------------------------------
+2026-05-01 22:20:05,762 - triage - INFO - Generating LLM response for ticket 18...
+2026-05-01 22:20:08,695 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 22:20:08,695 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:20:08,695 - main - INFO - ----------------------------------------
+2026-05-01 22:20:08,777 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 22:20:08,777 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 22:20:08,777 - main - INFO - ----------------------------------------
+2026-05-01 22:20:08,798 - triage - INFO - Generating LLM response for ticket 20...
+2026-05-01 22:20:19,727 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 22:20:19,727 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:20:19,728 - main - INFO - ----------------------------------------
+2026-05-01 22:20:19,856 - triage - INFO - Generating LLM response for ticket 21...
+2026-05-01 22:20:22,931 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 22:20:22,932 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:20:22,932 - main - INFO - ----------------------------------------
+2026-05-01 22:20:23,003 - triage - INFO - Generating LLM response for ticket 22...
+2026-05-01 22:20:32,422 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 22:20:32,422 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:20:32,422 - main - INFO - ----------------------------------------
+2026-05-01 22:20:32,524 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-01 22:20:32,524 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:20:32,524 - main - INFO - ----------------------------------------
+2026-05-01 22:20:32,587 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 22:20:32,587 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 22:20:32,587 - main - INFO - ----------------------------------------
+2026-05-01 22:20:32,627 - triage - INFO - Generating LLM response for ticket 25...
+2026-05-01 22:20:49,062 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 22:20:49,063 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:20:49,063 - main - INFO - ----------------------------------------
+2026-05-01 22:20:49,159 - triage - INFO - Generating LLM response for ticket 26...
+2026-05-01 22:20:57,540 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 22:20:57,541 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:20:57,541 - main - INFO - ----------------------------------------
+2026-05-01 22:20:57,637 - triage - INFO - Generating LLM response for ticket 27...
+2026-05-01 22:21:18,151 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 22:21:18,151 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:21:18,151 - main - INFO - ----------------------------------------
+2026-05-01 22:21:18,384 - triage - INFO - Generating LLM response for ticket 28...
+2026-05-01 22:21:29,617 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 22:21:29,617 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:21:29,617 - main - INFO - ----------------------------------------
+2026-05-01 22:21:29,659 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 22:21:29,666 - main - INFO - Done.
+2026-05-01 22:24:24,640 - main - INFO - Starting ingestion...
+2026-05-01 22:24:24,756 - main - INFO - Ingested 5731 chunks.
+2026-05-01 22:24:24,756 - main - INFO - Initializing search engine...
+2026-05-01 22:24:24,961 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-01 22:24:24,961 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-01 22:24:54,046 - main - INFO - Initializing pipeline...
+2026-05-01 22:24:54,046 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 22:24:54,057 - main - INFO - Processing 29 tickets...
+2026-05-01 22:24:54,145 - triage - INFO - Generating LLM response for ticket 0...
+2026-05-01 22:25:00,141 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 22:25:00,142 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:25:00,142 - main - INFO - ----------------------------------------
+2026-05-01 22:25:00,273 - triage - INFO - Generating LLM response for ticket 1...
+2026-05-01 22:25:11,913 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 22:25:11,915 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:25:11,915 - main - INFO - ----------------------------------------
+2026-05-01 22:25:12,145 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 22:25:12,145 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:25:12,146 - main - INFO - ----------------------------------------
+2026-05-01 22:25:12,760 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 22:25:12,761 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:25:12,761 - main - INFO - ----------------------------------------
+2026-05-01 22:25:13,356 - triage - INFO - Generating LLM response for ticket 4...
+2026-05-01 22:25:20,074 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 22:25:20,075 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:25:20,075 - main - INFO - ----------------------------------------
+2026-05-01 22:25:20,865 - triage - INFO - Generating LLM response for ticket 5...
+2026-05-01 22:25:27,496 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 22:25:27,496 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:25:27,496 - main - INFO - ----------------------------------------
+2026-05-01 22:25:28,666 - triage - INFO - Generating LLM response for ticket 6...
+2026-05-01 22:25:34,278 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 22:25:34,278 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:25:34,278 - main - INFO - ----------------------------------------
+2026-05-01 22:25:35,040 - triage - INFO - Generating LLM response for ticket 7...
+2026-05-01 22:25:35,643 - main - INFO - Starting ingestion...
+2026-05-01 22:25:35,778 - main - INFO - Ingested 5731 chunks.
+2026-05-01 22:25:35,778 - main - INFO - Initializing search engine...
+2026-05-01 22:25:36,080 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-01 22:25:36,080 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-01 22:25:42,186 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 22:25:42,187 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:25:42,187 - main - INFO - ----------------------------------------
+2026-05-01 22:25:42,550 - triage - INFO - Generating LLM response for ticket 8...
+2026-05-01 22:26:03,852 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 22:26:03,853 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:26:03,853 - main - INFO - ----------------------------------------
+2026-05-01 22:26:04,207 - triage - INFO - Generating LLM response for ticket 9...
+2026-05-01 22:26:21,171 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 22:26:21,172 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:26:21,172 - main - INFO - ----------------------------------------
+2026-05-01 22:26:26,254 - triage - INFO - Generating LLM response for ticket 10...
+2026-05-01 22:26:46,242 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 22:26:46,243 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:26:46,243 - main - INFO - ----------------------------------------
+2026-05-01 22:26:46,377 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-01 22:26:46,377 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:26:46,377 - main - INFO - ----------------------------------------
+2026-05-01 22:26:49,996 - triage - INFO - Generating LLM response for ticket 12...
+2026-05-01 22:27:00,397 - main - INFO - Initializing pipeline...
+2026-05-01 22:27:00,405 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-01 22:27:00,435 - main - INFO - Processing 29 tickets...
+2026-05-01 22:27:17,712 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 22:27:17,712 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:27:17,712 - main - INFO - ----------------------------------------
+2026-05-01 22:27:26,508 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-01 22:27:26,509 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:27:26,509 - main - INFO - ----------------------------------------
+2026-05-01 22:27:28,317 - triage - INFO - Generating LLM response for ticket 13...
+2026-05-01 22:27:48,285 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-01 22:27:48,285 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:27:48,286 - main - INFO - ----------------------------------------
+2026-05-01 22:27:48,639 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-01 22:27:48,639 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:27:48,639 - main - INFO - ----------------------------------------
+2026-05-01 22:27:56,533 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 22:27:56,533 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:27:56,533 - main - INFO - ----------------------------------------
+2026-05-01 22:27:57,741 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-01 22:27:57,742 - main - INFO - Justification: High risk detected: refund
+2026-05-01 22:27:57,742 - main - INFO - ----------------------------------------
+2026-05-01 22:28:00,411 - triage - INFO - Generating LLM response for ticket 14...
+2026-05-01 22:28:10,095 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-01 22:28:10,096 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:28:10,096 - main - INFO - ----------------------------------------
+2026-05-01 22:28:19,481 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 22:28:19,481 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:28:19,481 - main - INFO - ----------------------------------------
+2026-05-01 22:28:19,815 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 22:28:19,815 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 22:28:19,815 - main - INFO - ----------------------------------------
+2026-05-01 22:28:31,494 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-01 22:28:31,495 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:28:31,495 - main - INFO - ----------------------------------------
+2026-05-01 22:28:32,625 - triage - INFO - Generating LLM response for ticket 16...
+2026-05-01 22:28:39,827 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 22:28:39,827 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:28:39,827 - main - INFO - ----------------------------------------
+2026-05-01 22:28:42,217 - triage - INFO - Generating LLM response for ticket 17...
+2026-05-01 22:28:50,580 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-01 22:28:50,580 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:28:50,581 - main - INFO - ----------------------------------------
+2026-05-01 22:28:56,457 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 22:28:56,457 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:28:56,458 - main - INFO - ----------------------------------------
+2026-05-01 22:28:56,635 - triage - INFO - Generating LLM response for ticket 18...
+2026-05-01 22:29:01,599 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 22:29:01,599 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:29:01,599 - main - INFO - ----------------------------------------
+2026-05-01 22:29:10,444 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-01 22:29:10,444 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:29:10,444 - main - INFO - ----------------------------------------
+2026-05-01 22:29:12,298 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 22:29:12,298 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 22:29:12,298 - main - INFO - ----------------------------------------
+2026-05-01 22:29:31,200 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-01 22:29:31,201 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:29:31,201 - main - INFO - ----------------------------------------
+2026-05-01 22:29:32,577 - triage - INFO - Generating LLM response for ticket 20...
+2026-05-01 22:29:42,734 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-01 22:29:42,736 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:29:42,736 - main - INFO - ----------------------------------------
+2026-05-01 22:29:54,719 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 22:29:54,720 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:29:54,720 - main - INFO - ----------------------------------------
+2026-05-01 22:29:59,633 - triage - INFO - Generating LLM response for ticket 21...
+2026-05-01 22:30:12,585 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-01 22:30:12,586 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:30:12,586 - main - INFO - ----------------------------------------
+2026-05-01 22:30:13,138 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-01 22:30:13,139 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:30:13,139 - main - INFO - ----------------------------------------
+2026-05-01 22:30:16,451 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 22:30:16,451 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:30:16,451 - main - INFO - ----------------------------------------
+2026-05-01 22:30:20,354 - triage - INFO - Generating LLM response for ticket 22...
+2026-05-01 22:30:40,633 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-01 22:30:40,633 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:30:40,633 - main - INFO - ----------------------------------------
+2026-05-01 22:30:50,358 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 22:30:50,359 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:30:50,359 - main - INFO - ----------------------------------------
+2026-05-01 22:30:52,449 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-01 22:30:52,449 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:30:52,449 - main - INFO - ----------------------------------------
+2026-05-01 22:30:52,591 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 22:30:52,591 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 22:30:52,591 - main - INFO - ----------------------------------------
+2026-05-01 22:30:57,610 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-01 22:30:57,611 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:30:57,611 - main - INFO - ----------------------------------------
+2026-05-01 22:31:00,217 - triage - INFO - Generating LLM response for ticket 25...
+2026-05-01 22:31:18,476 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 22:31:18,477 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:31:18,477 - main - INFO - ----------------------------------------
+2026-05-01 22:31:26,594 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-01 22:31:26,594 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:31:26,595 - main - INFO - ----------------------------------------
+2026-05-01 22:31:26,926 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-01 22:31:26,927 - main - INFO - Justification: High risk detected: stolen
+2026-05-01 22:31:26,927 - main - INFO - ----------------------------------------
+2026-05-01 22:31:28,271 - triage - INFO - Generating LLM response for ticket 26...
+2026-05-01 22:31:38,424 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 22:31:38,425 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:31:38,425 - main - INFO - ----------------------------------------
+2026-05-01 22:31:46,931 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-01 22:31:46,931 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:31:46,931 - main - INFO - ----------------------------------------
+2026-05-01 22:31:48,328 - triage - INFO - Generating LLM response for ticket 27...
+2026-05-01 22:32:00,231 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 22:32:00,232 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:32:00,232 - main - INFO - ----------------------------------------
+2026-05-01 22:32:06,546 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-01 22:32:06,547 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:32:06,547 - main - INFO - ----------------------------------------
+2026-05-01 22:32:08,337 - triage - INFO - Generating LLM response for ticket 28...
+2026-05-01 22:32:11,208 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-01 22:32:11,208 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:32:11,208 - main - INFO - ----------------------------------------
+2026-05-01 22:32:22,788 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 22:32:22,789 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:32:22,789 - main - INFO - ----------------------------------------
+2026-05-01 22:32:22,816 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 22:32:22,821 - main - INFO - Done.
+2026-05-01 22:32:24,468 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-01 22:32:24,468 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-01 22:32:24,468 - main - INFO - ----------------------------------------
+2026-05-01 22:32:38,568 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-01 22:32:38,569 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:32:38,569 - main - INFO - ----------------------------------------
+2026-05-01 22:32:43,799 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-01 22:32:43,799 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:32:43,799 - main - INFO - ----------------------------------------
+2026-05-01 22:32:56,614 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-01 22:32:56,614 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:32:56,614 - main - INFO - ----------------------------------------
+2026-05-01 22:32:57,784 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-01 22:32:57,784 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-01 22:32:57,784 - main - INFO - ----------------------------------------
+2026-05-01 22:32:57,887 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-01 22:32:57,888 - main - INFO - Justification: High risk detected: fraud
+2026-05-01 22:32:57,888 - main - INFO - ----------------------------------------
+2026-05-01 22:33:17,263 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-01 22:33:17,263 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:33:17,263 - main - INFO - ----------------------------------------
+2026-05-01 22:33:26,493 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-01 22:33:26,493 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:33:26,493 - main - INFO - ----------------------------------------
+2026-05-01 22:33:41,915 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-01 22:33:41,915 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:33:41,915 - main - INFO - ----------------------------------------
+2026-05-01 22:33:54,217 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-01 22:33:54,217 - main - INFO - Justification: Direct documentation found.
+2026-05-01 22:33:54,217 - main - INFO - ----------------------------------------
+2026-05-01 22:33:54,226 - main - INFO - Saving results to outputs/output.csv...
+2026-05-01 22:33:54,233 - main - INFO - Done.
+2026-05-02 09:45:10,629 - main - INFO - Starting ingestion...
+2026-05-02 09:45:10,748 - main - INFO - Ingested 5731 chunks.
+2026-05-02 09:45:10,748 - main - INFO - Initializing search engine...
+2026-05-02 09:45:10,943 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 09:45:10,943 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 09:45:43,748 - main - INFO - Initializing pipeline...
+2026-05-02 09:45:43,757 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-02 09:45:43,773 - main - INFO - Processing 29 tickets...
+2026-05-02 09:45:58,215 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-02 09:45:58,216 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:45:58,216 - main - INFO - ----------------------------------------
+2026-05-02 09:46:09,799 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 09:46:09,800 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:46:09,800 - main - INFO - ----------------------------------------
+2026-05-02 09:46:09,940 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 09:46:09,941 - main - INFO - Justification: High risk detected: refund
+2026-05-02 09:46:09,941 - main - INFO - ----------------------------------------
+2026-05-02 09:46:10,602 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 09:46:10,602 - main - INFO - Justification: High risk detected: refund
+2026-05-02 09:46:10,602 - main - INFO - ----------------------------------------
+2026-05-02 09:46:18,118 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-02 09:46:18,119 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:46:18,119 - main - INFO - ----------------------------------------
+2026-05-02 09:46:27,764 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 09:46:27,764 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:46:27,765 - main - INFO - ----------------------------------------
+2026-05-02 09:46:34,645 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-02 09:46:34,646 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:46:34,646 - main - INFO - ----------------------------------------
+2026-05-02 09:46:41,523 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-02 09:46:41,523 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:46:41,523 - main - INFO - ----------------------------------------
+2026-05-02 09:46:53,344 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-02 09:46:53,344 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:46:53,345 - main - INFO - ----------------------------------------
+2026-05-02 09:47:00,933 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-02 09:47:00,934 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:47:00,934 - main - INFO - ----------------------------------------
+2026-05-02 09:47:16,172 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-02 09:47:16,172 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:47:16,172 - main - INFO - ----------------------------------------
+2026-05-02 09:47:16,411 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 09:47:16,411 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 09:47:16,411 - main - INFO - ----------------------------------------
+2026-05-02 09:47:35,779 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-02 09:47:35,780 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:47:35,780 - main - INFO - ----------------------------------------
+2026-05-02 09:47:41,897 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 09:47:41,897 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:47:41,898 - main - INFO - ----------------------------------------
+2026-05-02 09:47:49,856 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-02 09:47:49,859 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:47:49,859 - main - INFO - ----------------------------------------
+2026-05-02 09:47:50,019 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 09:47:50,019 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 09:47:50,019 - main - INFO - ----------------------------------------
+2026-05-02 09:47:53,568 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-02 09:47:53,568 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:47:53,568 - main - INFO - ----------------------------------------
+2026-05-02 09:47:59,854 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 09:47:59,855 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:47:59,855 - main - INFO - ----------------------------------------
+2026-05-02 09:48:02,508 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-02 09:48:02,508 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:48:02,508 - main - INFO - ----------------------------------------
+2026-05-02 09:48:03,359 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 09:48:03,360 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 09:48:03,360 - main - INFO - ----------------------------------------
+2026-05-02 09:48:10,583 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-02 09:48:10,584 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:48:10,584 - main - INFO - ----------------------------------------
+2026-05-02 09:48:15,809 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 09:48:15,810 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:48:15,810 - main - INFO - ----------------------------------------
+2026-05-02 09:48:24,786 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-02 09:48:24,787 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:48:24,787 - main - INFO - ----------------------------------------
+2026-05-02 09:48:25,624 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 09:48:25,624 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 09:48:25,624 - main - INFO - ----------------------------------------
+2026-05-02 09:48:25,656 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 09:48:25,656 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 09:48:25,656 - main - INFO - ----------------------------------------
+2026-05-02 09:48:32,719 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-02 09:48:32,719 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:48:32,719 - main - INFO - ----------------------------------------
+2026-05-02 09:48:46,012 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 09:48:46,013 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:48:46,013 - main - INFO - ----------------------------------------
+2026-05-02 09:48:57,353 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 09:48:57,354 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:48:57,354 - main - INFO - ----------------------------------------
+2026-05-02 09:49:03,953 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-02 09:49:03,954 - main - INFO - Justification: Direct documentation found.
+2026-05-02 09:49:03,954 - main - INFO - ----------------------------------------
+2026-05-02 09:49:03,991 - main - INFO - Saving results to outputs/output.csv...
+2026-05-02 09:49:04,000 - main - INFO - Done.
+2026-05-02 10:21:45,639 - main - INFO - Starting ingestion...
+2026-05-02 10:21:45,772 - main - INFO - Ingested 5731 chunks.
+2026-05-02 10:21:45,772 - main - INFO - Initializing search engine...
+2026-05-02 10:21:45,970 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 10:21:45,970 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 10:22:25,987 - main - INFO - Initializing pipeline...
+2026-05-02 10:22:25,994 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-02 10:22:26,009 - main - INFO - Processing 29 tickets...
+2026-05-02 10:22:34,336 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-02 10:22:34,336 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:22:34,336 - main - INFO - ----------------------------------------
+2026-05-02 10:22:55,185 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 10:22:55,186 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:22:55,186 - main - INFO - ----------------------------------------
+2026-05-02 10:22:56,426 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 10:22:56,426 - main - INFO - Justification: High risk detected: refund
+2026-05-02 10:22:56,426 - main - INFO - ----------------------------------------
+2026-05-02 10:22:58,078 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 10:22:58,078 - main - INFO - Justification: High risk detected: refund
+2026-05-02 10:22:58,078 - main - INFO - ----------------------------------------
+2026-05-02 10:23:06,337 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-02 10:23:06,337 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:23:06,337 - main - INFO - ----------------------------------------
+2026-05-02 10:23:16,306 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 10:23:16,307 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:23:16,307 - main - INFO - ----------------------------------------
+2026-05-02 10:23:25,956 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-02 10:23:25,956 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:23:25,956 - main - INFO - ----------------------------------------
+2026-05-02 10:23:36,707 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-02 10:23:36,707 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:23:36,707 - main - INFO - ----------------------------------------
+2026-05-02 10:23:57,273 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-02 10:23:57,273 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:23:57,273 - main - INFO - ----------------------------------------
+2026-05-02 10:24:14,306 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-02 10:24:14,306 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:24:14,307 - main - INFO - ----------------------------------------
+2026-05-02 10:24:32,338 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-02 10:24:32,339 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:24:32,340 - main - INFO - ----------------------------------------
+2026-05-02 10:24:32,547 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 10:24:32,547 - main - INFO - Justification: No relevant documentation found in corpus.
+2026-05-02 10:24:32,547 - main - INFO - ----------------------------------------
+2026-05-02 10:24:57,241 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-02 10:24:57,241 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:24:57,241 - main - INFO - ----------------------------------------
+2026-05-02 10:25:05,033 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 10:25:05,033 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:25:05,033 - main - INFO - ----------------------------------------
+2026-05-02 10:25:15,711 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-02 10:25:15,712 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:25:15,712 - main - INFO - ----------------------------------------
+2026-05-02 10:25:17,616 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 10:25:17,616 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 10:25:17,616 - main - INFO - ----------------------------------------
+2026-05-02 10:25:22,157 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-02 10:25:22,157 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:25:22,157 - main - INFO - ----------------------------------------
+2026-05-02 10:25:44,702 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 10:25:44,702 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:25:44,702 - main - INFO - ----------------------------------------
+2026-05-02 10:25:50,959 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-02 10:25:50,959 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:25:50,959 - main - INFO - ----------------------------------------
+2026-05-02 10:25:52,096 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 10:25:52,097 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 10:25:52,097 - main - INFO - ----------------------------------------
+2026-05-02 10:25:59,386 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-02 10:25:59,387 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:25:59,387 - main - INFO - ----------------------------------------
+2026-05-02 10:26:05,402 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 10:26:05,403 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:26:05,403 - main - INFO - ----------------------------------------
+2026-05-02 10:26:16,850 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-02 10:26:16,850 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:26:16,850 - main - INFO - ----------------------------------------
+2026-05-02 10:26:18,050 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 10:26:18,050 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 10:26:18,050 - main - INFO - ----------------------------------------
+2026-05-02 10:26:20,471 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 10:26:20,471 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 10:26:20,471 - main - INFO - ----------------------------------------
+2026-05-02 10:26:28,873 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-02 10:26:28,874 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:26:28,874 - main - INFO - ----------------------------------------
+2026-05-02 10:26:44,290 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 10:26:44,290 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:26:44,290 - main - INFO - ----------------------------------------
+2026-05-02 10:26:59,264 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 10:26:59,264 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:26:59,264 - main - INFO - ----------------------------------------
+2026-05-02 10:27:11,633 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-02 10:27:11,634 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:27:11,634 - main - INFO - ----------------------------------------
+2026-05-02 10:27:11,655 - main - INFO - Saving results to outputs/output.csv...
+2026-05-02 10:27:11,661 - main - INFO - Done.
+2026-05-02 10:52:35,208 - main - INFO - Starting ingestion...
+2026-05-02 10:52:35,347 - main - INFO - Ingested 5731 chunks.
+2026-05-02 10:52:35,347 - main - INFO - Initializing search engine...
+2026-05-02 10:52:35,684 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 10:52:35,684 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 10:54:19,755 - main - INFO - Initializing pipeline...
+2026-05-02 10:54:19,769 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-02 10:54:19,860 - main - INFO - Processing 29 tickets...
+2026-05-02 10:54:57,895 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-02 10:54:57,896 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:54:57,896 - main - INFO - ----------------------------------------
+2026-05-02 10:55:14,178 - main - INFO - Starting ingestion...
+2026-05-02 10:55:14,336 - main - INFO - Ingested 5731 chunks.
+2026-05-02 10:55:14,336 - main - INFO - Initializing search engine...
+2026-05-02 10:55:14,688 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 10:55:14,688 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 10:56:16,499 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 10:56:16,500 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:56:16,500 - main - INFO - ----------------------------------------
+2026-05-02 10:56:36,901 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 10:56:36,901 - main - INFO - Justification: High risk detected: refund
+2026-05-02 10:56:36,901 - main - INFO - ----------------------------------------
+2026-05-02 10:56:46,811 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 10:56:46,811 - main - INFO - Justification: High risk detected: refund
+2026-05-02 10:56:46,811 - main - INFO - ----------------------------------------
+2026-05-02 10:57:13,270 - main - INFO - Initializing pipeline...
+2026-05-02 10:57:13,279 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-02 10:57:13,304 - main - INFO - Processing 29 tickets...
+2026-05-02 10:57:17,267 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-02 10:57:17,267 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:57:17,267 - main - INFO - ----------------------------------------
+2026-05-02 10:57:27,298 - main - INFO - Starting ingestion...
+2026-05-02 10:57:27,443 - main - INFO - Ingested 5731 chunks.
+2026-05-02 10:57:27,443 - main - INFO - Initializing search engine...
+2026-05-02 10:57:27,750 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 10:57:27,750 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 10:58:06,324 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 10:58:06,325 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:58:06,325 - main - INFO - ----------------------------------------
+2026-05-02 10:58:31,936 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-02 10:58:31,937 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:58:31,937 - main - INFO - ----------------------------------------
+2026-05-02 10:59:43,012 - main - INFO - Initializing pipeline...
+2026-05-02 10:59:43,047 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-02 10:59:43,135 - main - INFO - Processing 29 tickets...
+2026-05-02 10:59:52,598 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-02 10:59:52,598 - main - INFO - Justification: Direct documentation found.
+2026-05-02 10:59:52,599 - main - INFO - ----------------------------------------
+2026-05-02 11:00:10,043 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 11:00:10,043 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:00:10,044 - main - INFO - ----------------------------------------
+2026-05-02 11:00:12,743 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-02 11:00:12,744 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:00:12,744 - main - INFO - ----------------------------------------
+2026-05-02 11:00:14,242 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 11:00:14,242 - main - INFO - Justification: High risk detected: refund
+2026-05-02 11:00:14,242 - main - INFO - ----------------------------------------
+2026-05-02 11:00:28,737 - main - INFO - Starting ingestion...
+2026-05-02 11:00:28,906 - main - INFO - Ingested 5731 chunks.
+2026-05-02 11:00:28,907 - main - INFO - Initializing search engine...
+2026-05-02 11:00:29,324 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 11:00:29,325 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 11:00:37,321 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 11:00:37,322 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:00:37,323 - main - INFO - ----------------------------------------
+2026-05-02 11:00:38,108 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 11:00:38,109 - main - INFO - Justification: High risk detected: refund
+2026-05-02 11:00:38,143 - main - INFO - ----------------------------------------
+2026-05-02 11:00:39,971 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-02 11:00:39,972 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:00:39,972 - main - INFO - ----------------------------------------
+2026-05-02 11:00:42,373 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 11:00:42,373 - main - INFO - Justification: High risk detected: refund
+2026-05-02 11:00:42,373 - main - INFO - ----------------------------------------
+2026-05-02 11:01:08,492 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 11:01:08,493 - main - INFO - Justification: High risk detected: refund
+2026-05-02 11:01:08,493 - main - INFO - ----------------------------------------
+2026-05-02 11:01:12,591 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-02 11:01:12,592 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:01:12,592 - main - INFO - ----------------------------------------
+2026-05-02 11:01:28,837 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-02 11:01:28,838 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:01:28,838 - main - INFO - ----------------------------------------
+2026-05-02 11:01:49,186 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 11:01:49,187 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:01:49,187 - main - INFO - ----------------------------------------
+2026-05-02 11:02:14,562 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:14,563 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:14,563 - main - INFO - ----------------------------------------
+2026-05-02 11:02:29,570 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:29,570 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:29,570 - main - INFO - ----------------------------------------
+2026-05-02 11:02:36,798 - main - INFO - Initializing pipeline...
+2026-05-02 11:02:36,809 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-02 11:02:36,888 - main - INFO - Processing 29 tickets...
+2026-05-02 11:02:38,861 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-02 11:02:38,861 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:38,861 - main - INFO - ----------------------------------------
+2026-05-02 11:02:39,291 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:39,291 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:39,291 - main - INFO - ----------------------------------------
+2026-05-02 11:02:39,511 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 11:02:39,511 - main - INFO - Justification: High risk detected: refund
+2026-05-02 11:02:39,511 - main - INFO - ----------------------------------------
+2026-05-02 11:02:39,819 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 11:02:39,819 - main - INFO - Justification: High risk detected: refund
+2026-05-02 11:02:39,819 - main - INFO - ----------------------------------------
+2026-05-02 11:02:40,051 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:40,051 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:40,051 - main - INFO - ----------------------------------------
+2026-05-02 11:02:40,144 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:40,145 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:40,145 - main - INFO - ----------------------------------------
+2026-05-02 11:02:40,321 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:40,321 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:40,321 - main - INFO - ----------------------------------------
+2026-05-02 11:02:40,966 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:40,966 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:40,966 - main - INFO - ----------------------------------------
+2026-05-02 11:02:41,524 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:41,524 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:41,524 - main - INFO - ----------------------------------------
+2026-05-02 11:02:41,824 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:41,824 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:41,825 - main - INFO - ----------------------------------------
+2026-05-02 11:02:42,165 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:42,165 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:42,166 - main - INFO - ----------------------------------------
+2026-05-02 11:02:42,726 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:42,726 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:42,726 - main - INFO - ----------------------------------------
+2026-05-02 11:02:43,350 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 11:02:43,350 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 11:02:43,350 - main - INFO - ----------------------------------------
+2026-05-02 11:02:43,550 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:43,550 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:43,550 - main - INFO - ----------------------------------------
+2026-05-02 11:02:43,695 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:43,695 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:43,695 - main - INFO - ----------------------------------------
+2026-05-02 11:02:44,230 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-02 11:02:44,230 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:44,230 - main - INFO - ----------------------------------------
+2026-05-02 11:02:44,284 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 11:02:44,284 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 11:02:44,284 - main - INFO - ----------------------------------------
+2026-05-02 11:02:44,966 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:44,966 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:44,966 - main - INFO - ----------------------------------------
+2026-05-02 11:02:45,199 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:45,200 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:45,200 - main - INFO - ----------------------------------------
+2026-05-02 11:02:45,897 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-02 11:02:45,897 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:45,897 - main - INFO - ----------------------------------------
+2026-05-02 11:02:46,021 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 11:02:46,021 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 11:02:46,021 - main - INFO - ----------------------------------------
+2026-05-02 11:02:46,128 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-02 11:02:46,128 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:46,128 - main - INFO - ----------------------------------------
+2026-05-02 11:02:46,198 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 11:02:46,198 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:46,198 - main - INFO - ----------------------------------------
+2026-05-02 11:02:46,293 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-02 11:02:46,293 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:46,293 - main - INFO - ----------------------------------------
+2026-05-02 11:02:46,619 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 11:02:46,619 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 11:02:46,619 - main - INFO - ----------------------------------------
+2026-05-02 11:02:46,899 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 11:02:46,899 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 11:02:46,899 - main - INFO - ----------------------------------------
+2026-05-02 11:02:47,024 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:47,025 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:47,025 - main - INFO - ----------------------------------------
+2026-05-02 11:02:47,170 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-02 11:02:47,170 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:47,170 - main - INFO - ----------------------------------------
+2026-05-02 11:02:47,448 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 11:02:47,448 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:47,448 - main - INFO - ----------------------------------------
+2026-05-02 11:02:47,626 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 11:02:47,626 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:47,626 - main - INFO - ----------------------------------------
+2026-05-02 11:02:47,705 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-02 11:02:47,705 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:02:47,706 - main - INFO - ----------------------------------------
+2026-05-02 11:02:47,720 - main - INFO - Saving results to outputs/output.csv...
+2026-05-02 11:02:47,725 - main - INFO - Done.
+2026-05-02 11:03:07,230 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-02 11:03:07,230 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:03:07,231 - main - INFO - ----------------------------------------
+2026-05-02 11:03:08,639 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-02 11:03:08,639 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:03:08,639 - main - INFO - ----------------------------------------
+2026-05-02 11:03:22,089 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-02 11:03:22,089 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:03:22,089 - main - INFO - ----------------------------------------
+2026-05-02 11:03:27,529 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-02 11:03:27,529 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:03:27,530 - main - INFO - ----------------------------------------
+2026-05-02 11:03:50,772 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-02 11:03:50,773 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:03:50,773 - main - INFO - ----------------------------------------
+2026-05-02 11:03:51,148 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 11:03:51,149 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 11:03:51,149 - main - INFO - ----------------------------------------
+2026-05-02 11:03:52,121 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-02 11:03:52,121 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:03:52,121 - main - INFO - ----------------------------------------
+2026-05-02 11:03:52,400 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 11:03:52,400 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 11:03:52,400 - main - INFO - ----------------------------------------
+2026-05-02 11:04:04,414 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-02 11:04:04,415 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:04:04,415 - main - INFO - ----------------------------------------
+2026-05-02 11:04:06,352 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-02 11:04:06,352 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:04:06,352 - main - INFO - ----------------------------------------
+2026-05-02 11:04:26,519 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 11:04:26,520 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:04:26,520 - main - INFO - ----------------------------------------
+2026-05-02 11:04:29,808 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-02 11:04:29,809 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:04:29,809 - main - INFO - ----------------------------------------
+2026-05-02 11:04:42,414 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-02 11:04:42,414 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:04:42,414 - main - INFO - ----------------------------------------
+2026-05-02 11:04:43,758 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-02 11:04:43,758 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:04:43,758 - main - INFO - ----------------------------------------
+2026-05-02 11:05:07,044 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 11:05:07,044 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 11:05:07,044 - main - INFO - ----------------------------------------
+2026-05-02 11:05:34,576 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 11:05:34,577 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:05:34,577 - main - INFO - ----------------------------------------
+2026-05-02 11:05:47,381 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-02 11:05:47,381 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:05:47,381 - main - INFO - ----------------------------------------
+2026-05-02 11:05:48,518 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-02 11:05:48,519 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:05:48,519 - main - INFO - ----------------------------------------
+2026-05-02 11:06:08,539 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-02 11:06:08,539 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:06:08,539 - main - INFO - ----------------------------------------
+2026-05-02 11:06:10,540 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 11:06:10,540 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:06:10,540 - main - INFO - ----------------------------------------
+2026-05-02 11:06:13,267 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-02 11:06:13,267 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:06:13,267 - main - INFO - ----------------------------------------
+2026-05-02 11:06:26,182 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-02 11:06:26,182 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:06:26,182 - main - INFO - ----------------------------------------
+2026-05-02 11:06:26,518 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 11:06:26,518 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 11:06:26,518 - main - INFO - ----------------------------------------
+2026-05-02 11:06:28,045 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 11:06:28,045 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 11:06:28,045 - main - INFO - ----------------------------------------
+2026-05-02 11:06:29,052 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 11:06:29,052 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 11:06:29,052 - main - INFO - ----------------------------------------
+2026-05-02 11:06:31,999 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-02 11:06:31,999 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:06:31,999 - main - INFO - ----------------------------------------
+2026-05-02 11:06:39,635 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-02 11:06:39,636 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:06:39,636 - main - INFO - ----------------------------------------
+2026-05-02 11:06:41,917 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 11:06:41,917 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:06:41,917 - main - INFO - ----------------------------------------
+2026-05-02 11:06:51,536 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-02 11:06:51,537 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:06:51,537 - main - INFO - ----------------------------------------
+2026-05-02 11:06:53,049 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-02 11:06:53,049 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:06:53,049 - main - INFO - ----------------------------------------
+2026-05-02 11:07:13,283 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 11:07:13,283 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 11:07:13,283 - main - INFO - ----------------------------------------
+2026-05-02 11:07:15,249 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 11:07:15,250 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:07:15,250 - main - INFO - ----------------------------------------
+2026-05-02 11:07:36,872 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 11:07:36,872 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:07:36,872 - main - INFO - ----------------------------------------
+2026-05-02 11:07:38,538 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 11:07:38,538 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 11:07:38,538 - main - INFO - ----------------------------------------
+2026-05-02 11:07:48,179 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-02 11:07:48,179 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:07:48,180 - main - INFO - ----------------------------------------
+2026-05-02 11:07:50,589 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-02 11:07:50,590 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:07:50,590 - main - INFO - ----------------------------------------
+2026-05-02 11:07:56,188 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-02 11:07:56,189 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:07:56,189 - main - INFO - ----------------------------------------
+2026-05-02 11:07:57,829 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 11:07:57,829 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:07:57,829 - main - INFO - ----------------------------------------
+2026-05-02 11:07:58,947 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 11:07:58,949 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 11:07:58,949 - main - INFO - ----------------------------------------
+2026-05-02 11:07:59,949 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 11:07:59,949 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 11:07:59,949 - main - INFO - ----------------------------------------
+2026-05-02 11:08:00,791 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 11:08:00,791 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:08:00,791 - main - INFO - ----------------------------------------
+2026-05-02 11:08:18,780 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-02 11:08:18,780 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:08:18,781 - main - INFO - ----------------------------------------
+2026-05-02 11:08:20,536 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-02 11:08:20,536 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:08:20,536 - main - INFO - ----------------------------------------
+2026-05-02 11:08:20,543 - main - INFO - Saving results to outputs/output.csv...
+2026-05-02 11:08:20,548 - main - INFO - Done.
+2026-05-02 11:08:29,518 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-02 11:08:29,518 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:08:29,518 - main - INFO - ----------------------------------------
+2026-05-02 11:08:41,372 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 11:08:41,372 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:08:41,372 - main - INFO - ----------------------------------------
+2026-05-02 11:08:52,271 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 11:08:52,271 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:08:52,271 - main - INFO - ----------------------------------------
+2026-05-02 11:09:07,016 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-02 11:09:07,017 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:09:07,017 - main - INFO - ----------------------------------------
+2026-05-02 11:09:09,463 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 11:09:09,463 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 11:09:09,463 - main - INFO - ----------------------------------------
+2026-05-02 11:09:13,811 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-02 11:09:13,812 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:09:13,812 - main - INFO - ----------------------------------------
+2026-05-02 11:09:16,828 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 11:09:16,828 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 11:09:16,828 - main - INFO - ----------------------------------------
+2026-05-02 11:09:18,240 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 11:09:18,240 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 11:09:18,240 - main - INFO - ----------------------------------------
+2026-05-02 11:09:30,762 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-02 11:09:30,762 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:09:30,762 - main - INFO - ----------------------------------------
+2026-05-02 11:09:43,802 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-02 11:09:43,802 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:09:43,802 - main - INFO - ----------------------------------------
+2026-05-02 11:09:54,678 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 11:09:54,679 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:09:54,679 - main - INFO - ----------------------------------------
+2026-05-02 11:10:15,644 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 11:10:15,645 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:10:15,645 - main - INFO - ----------------------------------------
+2026-05-02 11:10:30,529 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-02 11:10:30,529 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:10:30,529 - main - INFO - ----------------------------------------
+2026-05-02 11:10:33,118 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 11:10:33,118 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 11:10:33,118 - main - INFO - ----------------------------------------
+2026-05-02 11:10:48,805 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 11:10:48,806 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:10:48,806 - main - INFO - ----------------------------------------
+2026-05-02 11:10:52,951 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 11:10:52,951 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 11:10:52,951 - main - INFO - ----------------------------------------
+2026-05-02 11:11:02,699 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-02 11:11:02,699 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:11:02,699 - main - INFO - ----------------------------------------
+2026-05-02 11:11:02,757 - main - INFO - Saving results to outputs/output.csv...
+2026-05-02 11:11:02,788 - main - INFO - Done.
+2026-05-02 11:11:13,816 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-02 11:11:13,817 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:11:13,817 - main - INFO - ----------------------------------------
+2026-05-02 11:11:23,781 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 11:11:23,781 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:11:23,781 - main - INFO - ----------------------------------------
+2026-05-02 11:11:53,910 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 11:11:53,910 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:11:53,910 - main - INFO - ----------------------------------------
+2026-05-02 11:12:03,031 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-02 11:12:03,031 - main - INFO - Justification: Direct documentation found.
+2026-05-02 11:12:03,032 - main - INFO - ----------------------------------------
+2026-05-02 11:12:03,074 - main - INFO - Saving results to outputs/output.csv...
+2026-05-02 11:12:03,101 - main - INFO - Done.
+2026-05-02 14:20:19,955 - main - INFO - Starting ingestion...
+2026-05-02 14:20:20,085 - main - INFO - Ingested 5731 chunks.
+2026-05-02 14:20:20,085 - main - INFO - Initializing search engine...
+2026-05-02 14:20:20,297 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 14:20:20,297 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 14:20:49,080 - main - INFO - Initializing pipeline...
+2026-05-02 14:20:49,093 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-02 14:20:49,162 - main - INFO - Processing 29 tickets...
+2026-05-02 14:20:59,152 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-02 14:20:59,152 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:20:59,152 - main - INFO - ----------------------------------------
+2026-05-02 14:21:11,539 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 14:21:11,539 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:21:11,539 - main - INFO - ----------------------------------------
+2026-05-02 14:21:12,318 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 14:21:12,318 - main - INFO - Justification: High risk detected: refund
+2026-05-02 14:21:12,318 - main - INFO - ----------------------------------------
+2026-05-02 14:21:13,495 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:21:13,495 - main - INFO - Justification: High risk detected: refund
+2026-05-02 14:21:13,495 - main - INFO - ----------------------------------------
+2026-05-02 14:21:24,696 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-02 14:21:24,697 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:21:24,697 - main - INFO - ----------------------------------------
+2026-05-02 14:21:35,768 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 14:21:35,769 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:21:35,769 - main - INFO - ----------------------------------------
+2026-05-02 14:22:01,593 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-02 14:22:01,594 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:22:01,594 - main - INFO - ----------------------------------------
+2026-05-02 14:22:11,176 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-02 14:22:11,177 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:22:11,177 - main - INFO - ----------------------------------------
+2026-05-02 14:22:38,944 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-02 14:22:38,945 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:22:38,945 - main - INFO - ----------------------------------------
+2026-05-02 14:22:51,011 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-02 14:22:51,011 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:22:51,011 - main - INFO - ----------------------------------------
+2026-05-02 14:23:05,811 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-02 14:23:05,812 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:23:05,812 - main - INFO - ----------------------------------------
+2026-05-02 14:23:06,039 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 14:23:06,040 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 14:23:06,040 - main - INFO - ----------------------------------------
+2026-05-02 14:23:14,812 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-02 14:23:14,812 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:23:14,812 - main - INFO - ----------------------------------------
+2026-05-02 14:23:42,637 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 14:23:42,638 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:23:42,638 - main - INFO - ----------------------------------------
+2026-05-02 14:23:56,154 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-02 14:23:56,154 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:23:56,154 - main - INFO - ----------------------------------------
+2026-05-02 14:23:57,918 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 14:23:57,918 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 14:23:57,919 - main - INFO - ----------------------------------------
+2026-05-02 14:24:07,204 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-02 14:24:07,204 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:24:07,205 - main - INFO - ----------------------------------------
+2026-05-02 14:24:22,639 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 14:24:22,640 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:24:22,640 - main - INFO - ----------------------------------------
+2026-05-02 14:24:29,922 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-02 14:24:29,923 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:24:29,923 - main - INFO - ----------------------------------------
+2026-05-02 14:24:31,308 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 14:24:31,308 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 14:24:31,308 - main - INFO - ----------------------------------------
+2026-05-02 14:24:42,598 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-02 14:24:42,598 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:24:42,598 - main - INFO - ----------------------------------------
+2026-05-02 14:24:55,101 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 14:24:55,101 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:24:55,102 - main - INFO - ----------------------------------------
+2026-05-02 14:25:04,672 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-02 14:25:04,672 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:25:04,672 - main - INFO - ----------------------------------------
+2026-05-02 14:25:06,101 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 14:25:06,101 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 14:25:06,101 - main - INFO - ----------------------------------------
+2026-05-02 14:25:08,453 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 14:25:08,453 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 14:25:08,453 - main - INFO - ----------------------------------------
+2026-05-02 14:25:19,310 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-02 14:25:19,311 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:25:19,311 - main - INFO - ----------------------------------------
+2026-05-02 14:25:36,873 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 14:25:36,873 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:25:36,873 - main - INFO - ----------------------------------------
+2026-05-02 14:25:50,560 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 14:25:50,561 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:25:50,561 - main - INFO - ----------------------------------------
+2026-05-02 14:26:02,604 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-02 14:26:02,605 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:26:02,605 - main - INFO - ----------------------------------------
+2026-05-02 14:26:02,624 - main - INFO - Saving results to outputs/output.csv...
+2026-05-02 14:26:02,629 - main - INFO - Done.
+2026-05-02 14:30:48,836 - main - INFO - Starting ingestion...
+2026-05-02 14:30:48,966 - main - INFO - Ingested 5731 chunks.
+2026-05-02 14:30:48,966 - main - INFO - Initializing search engine...
+2026-05-02 14:30:49,186 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 14:30:49,186 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 14:31:20,693 - main - INFO - Initializing pipeline...
+2026-05-02 14:31:20,701 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-02 14:31:20,711 - main - INFO - Processing 29 tickets...
+2026-05-02 14:31:32,883 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-02 14:31:32,884 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:31:32,884 - main - INFO - ----------------------------------------
+2026-05-02 14:31:43,744 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 14:31:43,744 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:31:43,744 - main - INFO - ----------------------------------------
+2026-05-02 14:31:44,492 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 14:31:44,492 - main - INFO - Justification: High risk detected: refund
+2026-05-02 14:31:44,492 - main - INFO - ----------------------------------------
+2026-05-02 14:31:45,672 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:31:45,672 - main - INFO - Justification: High risk detected: refund
+2026-05-02 14:31:45,672 - main - INFO - ----------------------------------------
+2026-05-02 14:31:56,467 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-02 14:31:56,468 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:31:56,468 - main - INFO - ----------------------------------------
+2026-05-02 14:32:07,421 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 14:32:07,422 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:32:07,422 - main - INFO - ----------------------------------------
+2026-05-02 14:32:33,581 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-02 14:32:33,582 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:32:33,582 - main - INFO - ----------------------------------------
+2026-05-02 14:32:43,768 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-02 14:32:43,769 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:32:43,769 - main - INFO - ----------------------------------------
+2026-05-02 14:33:16,497 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-02 14:33:16,498 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:33:16,498 - main - INFO - ----------------------------------------
+2026-05-02 14:33:33,875 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-02 14:33:33,875 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:33:33,875 - main - INFO - ----------------------------------------
+2026-05-02 14:33:52,240 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-02 14:33:52,241 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:33:52,241 - main - INFO - ----------------------------------------
+2026-05-02 14:33:52,491 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 14:33:52,491 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 14:33:52,491 - main - INFO - ----------------------------------------
+2026-05-02 14:34:02,445 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-02 14:34:02,445 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:34:02,445 - main - INFO - ----------------------------------------
+2026-05-02 14:34:52,055 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 14:34:52,056 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:34:52,056 - main - INFO - ----------------------------------------
+2026-05-02 14:35:17,754 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-02 14:35:17,755 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:35:17,755 - main - INFO - ----------------------------------------
+2026-05-02 14:35:20,543 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 14:35:20,544 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 14:35:20,544 - main - INFO - ----------------------------------------
+2026-05-02 14:35:41,922 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-02 14:35:41,923 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:35:41,923 - main - INFO - ----------------------------------------
+2026-05-02 14:36:02,563 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 14:36:02,563 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:36:02,563 - main - INFO - ----------------------------------------
+2026-05-02 14:36:12,098 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-02 14:36:12,098 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:36:12,099 - main - INFO - ----------------------------------------
+2026-05-02 14:36:13,233 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 14:36:13,233 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 14:36:13,233 - main - INFO - ----------------------------------------
+2026-05-02 14:36:35,844 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-02 14:36:35,845 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:36:35,845 - main - INFO - ----------------------------------------
+2026-05-02 14:37:03,487 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 14:37:03,488 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:37:03,488 - main - INFO - ----------------------------------------
+2026-05-02 14:37:20,420 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-02 14:37:20,420 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:37:20,420 - main - INFO - ----------------------------------------
+2026-05-02 14:37:22,408 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 14:37:22,408 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 14:37:22,408 - main - INFO - ----------------------------------------
+2026-05-02 14:37:26,221 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 14:37:26,221 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 14:37:26,221 - main - INFO - ----------------------------------------
+2026-05-02 14:37:42,355 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-02 14:37:42,356 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:37:42,356 - main - INFO - ----------------------------------------
+2026-05-02 14:38:01,226 - main - INFO - Starting ingestion...
+2026-05-02 14:38:01,383 - main - INFO - Ingested 5731 chunks.
+2026-05-02 14:38:01,384 - main - INFO - Initializing search engine...
+2026-05-02 14:38:01,719 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 14:38:01,719 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 14:38:03,456 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 14:38:03,456 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:38:03,456 - main - INFO - ----------------------------------------
+2026-05-02 14:38:29,686 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 14:38:29,687 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:38:29,687 - main - INFO - ----------------------------------------
+2026-05-02 14:38:55,745 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-02 14:38:55,746 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:38:55,746 - main - INFO - ----------------------------------------
+2026-05-02 14:38:55,771 - main - INFO - Saving results to outputs/output.csv...
+2026-05-02 14:38:55,778 - main - INFO - Done.
+2026-05-02 14:39:09,240 - main - INFO - Initializing pipeline...
+2026-05-02 14:39:09,248 - main - INFO - Loading tickets from support_tickets/support_tickets.csv...
+2026-05-02 14:39:09,263 - main - INFO - Processing 29 tickets...
+2026-05-02 14:39:21,911 - main - INFO - Ticket 0 | Domain: claude | Decision: reply
+2026-05-02 14:39:21,911 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:39:21,911 - main - INFO - ----------------------------------------
+2026-05-02 14:39:42,448 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 14:39:42,448 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:39:42,449 - main - INFO - ----------------------------------------
+2026-05-02 14:39:43,841 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 14:39:43,841 - main - INFO - Justification: High risk detected: refund
+2026-05-02 14:39:43,841 - main - INFO - ----------------------------------------
+2026-05-02 14:39:45,491 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:39:45,491 - main - INFO - Justification: High risk detected: refund
+2026-05-02 14:39:45,491 - main - INFO - ----------------------------------------
+2026-05-02 14:39:58,931 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: reply
+2026-05-02 14:39:58,931 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:39:58,931 - main - INFO - ----------------------------------------
+2026-05-02 14:40:19,515 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 14:40:19,515 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:40:19,515 - main - INFO - ----------------------------------------
+2026-05-02 14:40:31,608 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: reply
+2026-05-02 14:40:31,608 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:40:31,609 - main - INFO - ----------------------------------------
+2026-05-02 14:40:45,256 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: reply
+2026-05-02 14:40:45,256 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:40:45,256 - main - INFO - ----------------------------------------
+2026-05-02 14:41:00,582 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: reply
+2026-05-02 14:41:00,583 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:41:00,583 - main - INFO - ----------------------------------------
+2026-05-02 14:41:19,360 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: reply
+2026-05-02 14:41:19,360 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:41:19,361 - main - INFO - ----------------------------------------
+2026-05-02 14:41:39,855 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: reply
+2026-05-02 14:41:39,855 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:41:39,855 - main - INFO - ----------------------------------------
+2026-05-02 14:41:40,049 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 14:41:40,049 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 14:41:40,049 - main - INFO - ----------------------------------------
+2026-05-02 14:41:49,991 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: reply
+2026-05-02 14:41:49,991 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:41:49,991 - main - INFO - ----------------------------------------
+2026-05-02 14:42:02,458 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 14:42:02,458 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:42:02,458 - main - INFO - ----------------------------------------
+2026-05-02 14:42:14,413 - main - INFO - Ticket 14 | Domain: claude | Decision: reply
+2026-05-02 14:42:14,413 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:42:14,413 - main - INFO - ----------------------------------------
+2026-05-02 14:42:16,468 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 14:42:16,468 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 14:42:16,468 - main - INFO - ----------------------------------------
+2026-05-02 14:42:38,414 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: reply
+2026-05-02 14:42:38,414 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:42:38,414 - main - INFO - ----------------------------------------
+2026-05-02 14:43:07,509 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 14:43:07,510 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:43:07,510 - main - INFO - ----------------------------------------
+2026-05-02 14:43:27,417 - main - INFO - Ticket 18 | Domain: visa | Decision: reply
+2026-05-02 14:43:27,418 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:43:27,418 - main - INFO - ----------------------------------------
+2026-05-02 14:43:29,609 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 14:43:29,610 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 14:43:29,610 - main - INFO - ----------------------------------------
+2026-05-02 14:43:57,386 - main - INFO - Ticket 20 | Domain: claude | Decision: reply
+2026-05-02 14:43:57,387 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:43:57,387 - main - INFO - ----------------------------------------
+2026-05-02 14:44:13,679 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 14:44:13,680 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:44:13,680 - main - INFO - ----------------------------------------
+2026-05-02 14:44:28,695 - main - INFO - Ticket 22 | Domain: claude | Decision: reply
+2026-05-02 14:44:28,696 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:44:28,696 - main - INFO - ----------------------------------------
+2026-05-02 14:44:30,335 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 14:44:30,335 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 14:44:30,335 - main - INFO - ----------------------------------------
+2026-05-02 14:44:33,411 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 14:44:33,411 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 14:44:33,411 - main - INFO - ----------------------------------------
+2026-05-02 14:44:55,111 - main - INFO - Ticket 25 | Domain: claude | Decision: reply
+2026-05-02 14:44:55,112 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:44:55,112 - main - INFO - ----------------------------------------
+2026-05-02 14:45:29,797 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 14:45:29,798 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:45:29,798 - main - INFO - ----------------------------------------
+2026-05-02 14:46:02,111 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 14:46:02,111 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:46:02,111 - main - INFO - ----------------------------------------
+2026-05-02 14:46:15,694 - main - INFO - Ticket 28 | Domain: visa | Decision: reply
+2026-05-02 14:46:15,696 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:46:15,696 - main - INFO - ----------------------------------------
+2026-05-02 14:46:15,722 - main - INFO - Saving results to outputs/output.csv...
+2026-05-02 14:46:15,729 - main - INFO - Done.

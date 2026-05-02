@@ -1,0 +1,98 @@
+2026-05-02 14:53:35,618 - main - INFO - Starting ingestion...
+2026-05-02 14:53:46,222 - main - INFO - Starting ingestion...
+2026-05-02 14:53:46,344 - main - INFO - Ingested 5731 chunks.
+2026-05-02 14:53:46,344 - main - INFO - Initializing search engine...
+2026-05-02 14:53:46,562 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-05-02 14:53:46,562 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-05-02 14:54:18,364 - main - INFO - Initializing pipeline...
+2026-05-02 14:54:18,397 - main - INFO - Loading tickets from ../support_tickets/support_tickets.csv...
+2026-05-02 14:54:18,403 - main - INFO - Processing 29 tickets...
+2026-05-02 14:54:33,060 - main - INFO - Ticket 0 | Domain: claude | Decision: escalate
+2026-05-02 14:54:33,061 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:54:33,061 - main - INFO - ----------------------------------------
+2026-05-02 14:54:50,848 - main - INFO - Ticket 1 | Domain: hackerrank | Decision: reply
+2026-05-02 14:54:50,848 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:54:50,848 - main - INFO - ----------------------------------------
+2026-05-02 14:54:50,949 - main - INFO - Ticket 2 | Domain: visa | Decision: escalate
+2026-05-02 14:54:50,949 - main - INFO - Justification: High risk detected: refund
+2026-05-02 14:54:50,949 - main - INFO - ----------------------------------------
+2026-05-02 14:54:51,678 - main - INFO - Ticket 3 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:54:51,678 - main - INFO - Justification: High risk detected: refund
+2026-05-02 14:54:51,678 - main - INFO - ----------------------------------------
+2026-05-02 14:55:14,099 - main - INFO - Ticket 4 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:55:14,099 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:55:14,099 - main - INFO - ----------------------------------------
+2026-05-02 14:55:30,040 - main - INFO - Ticket 5 | Domain: hackerrank | Decision: reply
+2026-05-02 14:55:30,044 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:55:30,044 - main - INFO - ----------------------------------------
+2026-05-02 14:55:47,036 - main - INFO - Ticket 6 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:55:47,037 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:55:47,037 - main - INFO - ----------------------------------------
+2026-05-02 14:56:00,907 - main - INFO - Ticket 7 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:56:00,908 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:56:00,908 - main - INFO - ----------------------------------------
+2026-05-02 14:56:21,523 - main - INFO - Ticket 8 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:56:21,524 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:56:21,524 - main - INFO - ----------------------------------------
+2026-05-02 14:56:40,508 - main - INFO - Ticket 9 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:56:40,509 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:56:40,510 - main - INFO - ----------------------------------------
+2026-05-02 14:57:02,273 - main - INFO - Ticket 10 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:57:02,274 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:57:02,274 - main - INFO - ----------------------------------------
+2026-05-02 14:57:02,687 - main - INFO - Ticket 11 | Domain: unknown | Decision: escalate
+2026-05-02 14:57:02,688 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 14:57:02,688 - main - INFO - ----------------------------------------
+2026-05-02 14:57:17,835 - main - INFO - Ticket 12 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:57:17,836 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:57:17,836 - main - INFO - ----------------------------------------
+2026-05-02 14:57:52,010 - main - INFO - Ticket 13 | Domain: hackerrank | Decision: reply
+2026-05-02 14:57:52,011 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:57:52,011 - main - INFO - ----------------------------------------
+2026-05-02 14:58:02,275 - main - INFO - Ticket 14 | Domain: claude | Decision: escalate
+2026-05-02 14:58:02,275 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:58:02,275 - main - INFO - ----------------------------------------
+2026-05-02 14:58:03,351 - main - INFO - Ticket 15 | Domain: visa | Decision: escalate
+2026-05-02 14:58:03,351 - main - INFO - Justification: High risk detected: stolen
+2026-05-02 14:58:03,351 - main - INFO - ----------------------------------------
+2026-05-02 14:58:26,392 - main - INFO - Ticket 16 | Domain: hackerrank | Decision: escalate
+2026-05-02 14:58:26,392 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:58:26,392 - main - INFO - ----------------------------------------
+2026-05-02 14:58:49,556 - main - INFO - Ticket 17 | Domain: hackerrank | Decision: reply
+2026-05-02 14:58:49,557 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:58:49,557 - main - INFO - ----------------------------------------
+2026-05-02 14:58:58,651 - main - INFO - Ticket 18 | Domain: visa | Decision: escalate
+2026-05-02 14:58:58,651 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:58:58,652 - main - INFO - ----------------------------------------
+2026-05-02 14:58:58,808 - main - INFO - Ticket 19 | Domain: claude | Decision: escalate
+2026-05-02 14:58:58,808 - main - INFO - Justification: High risk detected: security vulnerability
+2026-05-02 14:58:58,808 - main - INFO - ----------------------------------------
+2026-05-02 14:59:07,022 - main - INFO - Ticket 20 | Domain: claude | Decision: escalate
+2026-05-02 14:59:07,022 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:59:07,022 - main - INFO - ----------------------------------------
+2026-05-02 14:59:21,868 - main - INFO - Ticket 21 | Domain: visa | Decision: reply
+2026-05-02 14:59:21,869 - main - INFO - Justification: Direct documentation found.
+2026-05-02 14:59:21,869 - main - INFO - ----------------------------------------
+2026-05-02 14:59:29,871 - main - INFO - Ticket 22 | Domain: claude | Decision: escalate
+2026-05-02 14:59:29,872 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:59:29,873 - main - INFO - ----------------------------------------
+2026-05-02 14:59:31,303 - main - INFO - Ticket 23 | Domain: unknown | Decision: escalate
+2026-05-02 14:59:31,303 - main - INFO - Justification: Could not determine the relevant ecosystem.
+2026-05-02 14:59:31,303 - main - INFO - ----------------------------------------
+2026-05-02 14:59:32,418 - main - INFO - Ticket 24 | Domain: visa | Decision: escalate
+2026-05-02 14:59:32,418 - main - INFO - Justification: High risk detected: fraud
+2026-05-02 14:59:32,418 - main - INFO - ----------------------------------------
+2026-05-02 14:59:49,014 - main - INFO - Ticket 25 | Domain: claude | Decision: escalate
+2026-05-02 14:59:49,015 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 14:59:49,015 - main - INFO - ----------------------------------------
+2026-05-02 15:00:12,451 - main - INFO - Ticket 26 | Domain: hackerrank | Decision: reply
+2026-05-02 15:00:12,452 - main - INFO - Justification: Direct documentation found.
+2026-05-02 15:00:12,452 - main - INFO - ----------------------------------------
+2026-05-02 15:00:26,543 - main - INFO - Ticket 27 | Domain: claude | Decision: reply
+2026-05-02 15:00:26,544 - main - INFO - Justification: Direct documentation found.
+2026-05-02 15:00:26,544 - main - INFO - ----------------------------------------
+2026-05-02 15:00:36,638 - main - INFO - Ticket 28 | Domain: visa | Decision: escalate
+2026-05-02 15:00:36,638 - main - INFO - Justification: Documentation found but does not contain sufficient information to answer the query.
+2026-05-02 15:00:36,638 - main - INFO - ----------------------------------------
+2026-05-02 15:00:36,678 - main - INFO - Saving results to ../outputs/output_fixed.csv...
+2026-05-02 15:00:36,686 - main - INFO - Done.

@@ -1,0 +1,608 @@
+# Product Requirements Document: Multi-Domain Support Triage Agent
+
+## 1. Document Purpose
+This PRD defines the product, technical, operational, safety, evaluation, and submission requirements for a terminal-based support triage agent for the HackerRank Orchestrate May 2026 Multi-Domain Support Triage Challenge.[1][2]
+
+The product must process support tickets across HackerRank Support, Claude Help Center, and Visa Support, use only the provided support corpus, determine whether a ticket can be answered safely, escalate risky or unsupported tickets when needed, retrieve the most relevant documentation, and produce a CSV output for all provided tickets.[1]
+
+This PRD also incorporates the recommended stronger approach: a retrieval-first, safety-gated, state-machine-based triage architecture with hybrid retrieval, deterministic escalation rules, and corpus-grounded generation.[1]
+
+## 2. Challenge-Aligned Product Vision
+The product is a command-line support triage system that acts as a safe routing and response engine rather than a free-form chatbot.[1]
+
+Its primary goal is not to maximize answer rate, but to maximize grounded correctness, safe escalation, reproducibility, and explainability under the challenge rules that prohibit unsupported claims and require careful handling of sensitive cases.[1]
+
+The product should be designed as if it were an internal support operations tool used by a trust-and-safety-conscious company serving multiple ecosystems with different policies and risk profiles.[1]
+
+## 3. Problem Statement Restatement
+The challenge requires building a terminal-based agent that can triage tickets from three support ecosystems: HackerRank, Claude, and Visa.[1]
+
+For each ticket, the system must identify the request type, classify the issue into a product area, decide whether to reply or escalate, retrieve the most relevant support documentation, and generate a safe, grounded response.[1]
+
+The challenge explicitly notes that some tickets are simple FAQs while others involve billing, bugs, fraud, permissions, account access, assessments, and other sensitive situations that require careful routing.[1]
+
+The submission must include a code zip, a populated predictions CSV for the support issues file, and a chat transcript log file, and shortlisted participants may be asked in an AI Judge interview to explain their approach, decisions, and use of AI.[1][2]
+
+## 4. Product Goals
+### 4.1 Primary Goals
+- Correctly identify the ecosystem relevant to each ticket: HackerRank, Claude, Visa, or unknown/ambiguous.[1]
+- Correctly classify the request type and product area for each ticket.[1]
+- Decide reply versus escalation safely and consistently, especially for high-risk or unsupported cases.[1]
+- Produce responses grounded only in the provided support corpus.[1]
+- Generate a valid output CSV for all tickets and a usable reasoning log for audit and interview explanation.[1]
+
+### 4.2 Secondary Goals
+- Improve retrieval precision through hybrid search and reranking.
+- Improve safety through deterministic rules and confidence gating.
+- Improve explainability through explicit state transitions and evidence references.
+- Improve reproducibility by minimizing nondeterministic free-form behavior.
+
+### 4.3 Non-Goals
+- The system will not browse live websites at runtime for final answers because the challenge requires using only the provided support corpus.[1]
+- The system will not invent policies, refunds, exceptions, internal actions, or troubleshooting steps that are not directly supported by the corpus.[1]
+- The system will not act as a general conversational assistant beyond triage.
+
+## 5. Core Product Principles
+### 5.1 Corpus-Only Grounding
+Every answerable response must be traceable to retrieved support content from the provided corpus, with no unsupported claims.[1]
+
+### 5.2 Safety Over Coverage
+When confidence is low, evidence is weak, or risk is high, the system should escalate rather than guess.[1]
+
+### 5.3 Deterministic Triage Before Generation
+The product must perform classification, risk screening, retrieval, and support verification before response generation to avoid hallucinations.[1]
+
+### 5.4 Explainable Decisions
+Every final decision should be explainable as a sequence of machine-readable steps and scores, which is especially useful because the challenge interview evaluates approach and decisions, not just output.[2]
+
+## 6. Users and Stakeholders
+### 6.1 Primary User
+The immediate user is the challenge evaluator, who runs the terminal tool on support ticket CSVs and expects structured outputs and grounded responses.[1]
+
+### 6.2 Secondary User
+The AI Judge interviewer is a secondary stakeholder who will inspect the reasoning quality, engineering decisions, and how AI was used to build the system.[2]
+
+### 6.3 End-User Simulation
+The final response text should simulate what a real support triage system would safely tell an end user in a production environment.[1]
+
+## 7. Product Scope
+### 7.1 In Scope
+- Terminal-based execution.[1]
+- Multi-domain support triage across the three specified ecosystems.[1]
+- Request-type classification.[1]
+- Product-area classification.[1]
+- Reply-versus-escalate decisioning.[1]
+- Support-document retrieval.[1]
+- Safe response generation.[1]
+- CSV output generation for provided support issues.[1]
+- Logging to transcript/log file for traceability.[1]
+
+### 7.2 Out of Scope
+- Web UI or hosted app deployment, which is not required by the hackathon framing.[2]
+- Real customer account actions, payment actions, or back-office operations.
+- External policy lookups outside the provided corpus.[1]
+
+## 8. Functional Requirements
+### 8.1 Input Handling
+The system shall accept the provided support issues CSV as input and process each row independently while allowing shared indices and caches across rows.[1]
+
+The system shall support batch processing from the terminal with a command like `python main.py --input support_issues.csv --output output.csv`.
+
+The system shall preserve ticket identifiers and any required output schema columns expected by the challenge dataset.[1]
+
+### 8.2 Corpus Ingestion
+The system shall ingest only the provided support corpus and normalize it into a searchable local knowledge base.[1]
+
+The ingestion pipeline shall parse article text, titles, headings, breadcrumbs, URLs, source ecosystem, and document metadata.
+
+The corpus shall be segmented into chunks with chunk-level metadata including `doc_id`, `chunk_id`, `domain`, `title`, `section_heading`, and `source_path`.
+
+### 8.3 Domain Detection
+For each ticket, the system shall classify the relevant ecosystem into one of four labels: `hackerrank`, `claude`, `visa`, or `unknown`.
+
+The classification shall combine lexical cues, semantic similarity, and optional lightweight LLM normalization rather than relying only on a single prompt.
+
+The system shall record a domain confidence score.
+
+### 8.4 Request Type Classification
+For each ticket, the system shall assign a request type from a controlled taxonomy. Minimum required classes should include:
+- faq
+- how_to
+- account_access
+- billing
+- refund
+- fraud_security
+- bug_report
+- permissions
+- assessment_issue
+- technical_troubleshooting
+- feature_request
+- complaint
+- unknown
+
+The classifier shall output both the predicted label and confidence.
+
+### 8.5 Product Area Classification
+For each ticket, the system shall assign a product area label appropriate to the ecosystem.
+
+Illustrative product areas:
+- HackerRank: assessment_delivery, candidate_login, employer_platform, subscription, coding_environment, certification
+- Claude: account_access, billing_plan, workspace_admin, login_security, usage_limits, product_behavior
+- Visa: card_security, disputes, transactions, card_benefits, travel_support, card_controls, merchant_issue
+
+The system shall support an `unknown` product area where evidence is insufficient.
+
+### 8.6 Risk Screening
+The system shall run a mandatory risk screen before answer generation.
+
+Risk categories shall include:
+- low
+- medium
+- high
+- critical
+
+High-risk triggers shall include fraud, lost or stolen card, suspicious transaction, identity verification, account compromise, unsupported billing exception, permissions requiring privileged action, candidate-specific assessment review, and policy ambiguity around sensitive actions.[1]
+
+Critical and high-risk cases shall strongly prefer escalation unless the corpus explicitly supports a safe self-service answer without account-specific handling.[1]
+
+### 8.7 Retrieval
+The system shall retrieve support evidence only from the selected domain index unless the ticket is marked ambiguous.
+
+The retrieval layer shall use hybrid retrieval combining sparse search and dense semantic retrieval.
+
+The system should retrieve top-k candidates, rerank them, and retain the final top-n evidence chunks for downstream decisioning.
+
+Recommended implementation:
+- BM25 for keyword matching
+- Dense vector retrieval using sentence embeddings
+- Reciprocal Rank Fusion or weighted fusion
+- Optional cross-encoder reranker for the top retrieved set
+
+### 8.8 Support Verification Gate
+Before generation, the system shall determine whether the retrieved evidence sufficiently supports answering the question.
+
+The system shall evaluate:
+- relevance of evidence to ticket
+- directness of answer support
+- completeness of support
+- safety of answering from corpus alone
+- contradiction across retrieved chunks
+
+If support is inadequate, the system shall escalate rather than answer.[1]
+
+### 8.9 Reply vs Escalate Decision
+The system shall output one of two final actions:
+- reply
+- escalate
+
+The decision shall be driven by a combination of hard safety rules and confidence thresholds.
+
+Example hard rules:
+- Fraud or card compromise -> escalate.[1]
+- Identity verification needed -> escalate.
+- Missing policy support for billing/refund exception -> escalate.[1]
+- Weak retrieval support -> escalate.
+- Clear FAQ with direct article evidence -> reply.
+
+### 8.10 Response Generation
+If the decision is `reply`, the system shall generate a concise, user-facing answer strictly grounded in retrieved evidence.[1]
+
+If the decision is `escalate`, the system shall generate a safe escalation message that does not invent internal processes, but clearly states that the issue needs human review or support-team handling.[1]
+
+The response generator shall avoid:
+- hallucinated policies
+- unsupported guarantees
+- fabricated troubleshooting steps
+- fabricated SLAs
+- invented account actions
+
+### 8.11 Justification and Logging
+For every ticket, the system shall store internal reasoning artifacts in logs, including:
+- domain prediction and score
+- request type and score
+- product area and score
+- risk flags
+- retrieved document IDs
+- support verification result
+- final decision
+- response text
+
+This logging is aligned with the challenge requirement to submit chat transcript/log output and to explain the system in the AI Judge interview.[1][2]
+
+### 8.12 CSV Output
+The system shall produce a populated output CSV for the provided support issues input file.[1]
+
+The exact output columns should match the challenge template if provided. If not explicitly fixed, the system should maintain at least the required identifiers plus final predictions and response fields.
+
+Recommended internal columns:
+- ticket_id
+- domain
+- request_type
+- product_area
+- decision
+- response
+- justification
+- top_doc_ids
+- confidence
+
+## 9. Recommended Architecture
+### 9.1 Chosen Architecture
+The product shall use a **retrieval-first, safety-gated triage state machine**.
+
+This is the recommended differentiating approach because it is stronger than naive RAG, safer for sensitive tickets, and easier to explain in evaluation.
+
+### 9.2 State Machine
+Mandatory state flow:
+1. `LOAD_TICKET`
+2. `DETECT_DOMAIN`
+3. `SCREEN_RISK`
+4. `CLASSIFY_REQUEST_TYPE`
+5. `CLASSIFY_PRODUCT_AREA`
+6. `RETRIEVE_EVIDENCE`
+7. `VERIFY_SUPPORT`
+8. `DECIDE_ACTION`
+9. `GENERATE_RESPONSE`
+10. `WRITE_OUTPUT`
+
+Each state shall emit structured outputs and confidence values.
+
+State transitions shall be rule-guarded. For example, `SCREEN_RISK` may jump directly to `DECIDE_ACTION` with escalation if severe fraud indicators are present.
+
+### 9.3 Why This Architecture
+A pure chatbot architecture would over-answer and produce unsupported claims under uncertainty, which directly conflicts with the challenge rules on corpus-only grounding and escalation for risky or unsupported cases.[1]
+
+A state-machine architecture supports reproducibility, easier debugging, threshold tuning, and better interview explainability.
+
+## 10. Algorithm Design
+### 10.1 Hybrid Retrieval Formula
+The retrieval score should combine sparse and dense scores:
+
+$$
+\text{hybrid}(q,d) = \alpha \cdot \text{bm25}(q,d) + (1-\alpha) \cdot \text{dense}(q,d)
+$$
+
+Recommended initial value: `alpha = 0.55`.
+
+### 10.2 Final Decision Score
+The support-verification and decisioning layer should compute a composite score:
+
+$$
+\text{final\_score} = 0.35R + 0.20D + 0.20I + 0.15S + 0.10C
+$$
+
+Where:
+- `R` = retrieval relevance
+- `D` = domain confidence
+- `I` = intent classification confidence
+- `S` = supportability score, meaning whether the corpus explicitly supports a safe answer
+- `C` = citation/evidence coverage across the generated reply
+
+The product shall not rely only on this score. Hard safety rules override score-based answering.
+
+### 10.3 Sensitivity-Aware Thresholds
+The decision thresholds should vary by risk level:
+- low-risk FAQ: answer threshold around 0.62
+- troubleshooting: answer threshold around 0.72
+- billing/refund: answer threshold around 0.82
+- fraud/security/account compromise: default escalate unless directly documented safe self-service exists
+
+### 10.4 Contradiction Detection
+The system should compare top evidence chunks for semantic contradiction or policy inconsistency. If evidence conflicts materially, escalate.
+
+### 10.5 Ambiguity Handling
+If the domain is ambiguous or multiple intents are entangled in the same ticket, the system should either:
+- decompose the ticket into sub-issues, or
+- select a conservative escalation decision
+
+### 10.6 Multi-Issue Decomposition
+For tickets containing multiple requests, the system should split them into sub-queries, retrieve evidence per sub-issue, and then merge results into a single safe final action.
+
+If any sub-issue is high-risk or unsupported, the final action should normally be escalation.
+
+## 11. Data Model
+### 11.1 Ticket Object
+```json
+{
+  "ticket_id": "string",
+  "raw_text": "string",
+  "metadata": {}
+}
+```
+
+### 11.2 Chunk Object
+```json
+{
+  "chunk_id": "string",
+  "doc_id": "string",
+  "domain": "hackerrank|claude|visa",
+  "title": "string",
+  "section_heading": "string",
+  "url": "string",
+  "text": "string"
+}
+```
+
+### 11.3 Triage Result Object
+```json
+{
+  "ticket_id": "string",
+  "domain": "visa",
+  "domain_confidence": 0.93,
+  "request_type": "fraud_security",
+  "request_type_confidence": 0.90,
+  "product_area": "card_security",
+  "product_area_confidence": 0.88,
+  "risk_level": "critical",
+  "risk_flags": ["suspicious_transaction", "possible_compromise"],
+  "retrieved_doc_ids": ["visa_102", "visa_118"],
+  "supportability_score": 0.34,
+  "decision": "escalate",
+  "response": "For account-specific security concerns, this issue should be reviewed by support.",
+  "justification": "High-risk financial/security concern with no safe self-service resolution supported by retrieved corpus."
+}
+```
+
+## 12. Retrieval and Knowledge Design
+### 12.1 Corpus Chunking Strategy
+The corpus shall be chunked semantically, not by arbitrary fixed length alone.
+
+Preferred unit order:
+- article title
+- breadcrumb/category
+- section heading
+- paragraph group
+- list block
+
+Chunk size target should generally preserve a complete support instruction unit.
+
+### 12.2 Metadata Enrichment
+Each chunk should store:
+- source ecosystem
+- support article title
+- section heading
+- article URL/path
+- keyword tags
+- article-level category
+
+### 12.3 Query Rewriting
+The system should generate internal search rewrites, such as:
+- compressed query
+- synonym-expanded query
+- heading-style query
+- troubleshooting-style query
+
+This improves retrieval without violating the corpus-only rule because final evidence still comes only from the provided support documents.[1]
+
+### 12.4 Domain-Specific Indices
+The product should maintain separate indices for HackerRank, Claude, and Visa instead of one merged index, reducing domain contamination.
+
+## 13. Safety and Escalation Policy
+### 13.1 Escalate by Default Scenarios
+The following should default to escalation unless the corpus directly provides a safe, non-account-specific self-service answer:
+- card fraud or suspicious charges
+- lost or stolen cards
+- account takeover or compromise
+- identity verification
+- billing disputes and undocumented refund exceptions
+- permissions/admin actions requiring internal review
+- candidate-specific assessment investigation
+- data/privacy-sensitive cases
+- unsupported bug fixes or backend actions
+
+### 13.2 Reply-Eligible Scenarios
+The following may be answered when direct evidence exists:
+- FAQ-style informational queries
+- supported how-to steps
+- documented troubleshooting instructions
+- documented account settings guidance
+- policy explanations explicitly stated in corpus
+
+### 13.3 Response Safety Rules
+All generated responses must:
+- be concise
+- be evidence-backed
+- avoid promising resolution not supported by the corpus
+- avoid requesting unnecessary sensitive data
+- avoid giving legal, financial, or security guarantees
+- direct to human support when required
+
+## 14. UX Requirements for Terminal Interface
+### 14.1 CLI Commands
+Minimum commands:
+- `ingest` to build indices
+- `run` to process tickets
+- `eval` to evaluate on labeled samples if available
+- `inspect` to debug one ticket with evidence traces
+
+### 14.2 Console Output
+The CLI should display:
+- current ticket number
+- ticket ID
+- predicted domain
+- request type
+- decision
+- confidence
+- top evidence article IDs
+
+### 14.3 Debug Mode
+A `--debug` flag should print state transitions, scores, retrieved snippets, and rule hits.
+
+## 15. Non-Functional Requirements
+### 15.1 Accuracy
+The system should prioritize decision accuracy and evidence faithfulness over verbose answers.
+
+### 15.2 Reproducibility
+Runs on the same data and configuration should produce near-identical results.
+
+### 15.3 Latency
+The system should be efficient enough to process the full challenge dataset in a practical batch run from the terminal.
+
+### 15.4 Auditability
+Every decision should be recoverable from logs and structured intermediate outputs.
+
+### 15.5 Modularity
+Classifiers, retrievers, and generators should be separable modules to simplify tuning and demonstration.
+
+## 16. Model Strategy
+### 16.1 LLM Role
+The LLM should be used in constrained ways:
+- normalize ambiguous ticket phrasing
+- classify intent/product area into a fixed schema
+- summarize retrieved evidence into a safe response
+- provide escalation wording when required
+
+### 16.2 LLM Restrictions
+The LLM should not be trusted as the source of truth.
+
+The source of truth must always be the retrieved support corpus.[1]
+
+### 16.3 Prompt Design Rules
+Prompts should enforce:
+- schema-bound JSON outputs for classifiers
+- explicit “answer only from evidence” instruction for responders
+- explicit “escalate if unsupported” instruction
+- rejection of unsupported speculation
+
+## 17. Evaluation Plan
+### 17.1 Offline Validation
+Use the tickets with expected outputs for threshold tuning and regression checks because the challenge states that some tickets include expected output for validation.[1]
+
+### 17.2 Metrics
+Track:
+- domain classification accuracy
+- request type accuracy
+- product area accuracy
+- reply/escalate accuracy
+- evidence precision@k
+- grounding success rate
+- unsafe answer rate
+- over-escalation rate
+- under-escalation rate
+
+### 17.3 Error Analysis
+Classify failures into:
+- wrong domain
+- weak retrieval
+- wrong intent
+- wrong product area
+- unsafe answer
+- unnecessary escalation
+- unsupported justification
+
+## 18. Recommended Repository Structure
+```text
+code/
+  main.py
+  cli.py
+  config.py
+  ingest.py
+  pipeline.py
+  triage/
+    state_machine.py
+    domain_classifier.py
+    risk_screen.py
+    intent_classifier.py
+    product_area_classifier.py
+    support_verifier.py
+    decision_engine.py
+    response_generator.py
+  retrieval/
+    bm25_index.py
+    dense_index.py
+    hybrid_search.py
+    reranker.py
+    chunker.py
+  utils/
+    io.py
+    logging.py
+    schema.py
+  outputs/
+    output.csv
+    debug.jsonl
+    log.txt
+```
+
+This structure supports the challenge’s code zip, predictions CSV, and transcript logging requirements.[1]
+
+## 19. Logging Requirements
+The system shall write `log.txt` with a clear per-ticket trace because the challenge explicitly asks for the chat transcript/log file as a deliverable.[1]
+
+Recommended log block per ticket:
+- ticket_id
+- normalized query
+- domain prediction
+- risk flags
+- intent/product area
+- top evidence
+- final decision
+- final response
+- justification
+
+## 20. Submission Requirements Mapping
+| Challenge requirement | Product requirement mapping |
+|---|---|
+| Terminal-based | CLI-first architecture and commands.[1] |
+| Use only provided support corpus | Local corpus ingestion and strict grounding.[1] |
+| Avoid unsupported claims | Support verification gate and corpus-only response generation.[1] |
+| Escalate risky/unsupported cases | Risk engine and deterministic escalation policy.[1] |
+| Output CSV | Batch CSV writer.[1] |
+| Submit log.txt | Structured transcript logging.[1] |
+| AI Judge interview | Explainable state machine, logs, and score traces.[2] |
+
+## 21. Interview Readiness Requirements
+The system design should be explainable in plain language during the AI Judge interview, which the hackathon page says will review submission details, approach, decisions, and AI usage.[2]
+
+The team should be prepared to explain:
+- why safety-first triage was chosen over pure chatbot QA
+- how corpus-only grounding is enforced
+- why domain-specific indices were used
+- how thresholds were selected
+- how escalation is decided
+- how logs support auditability and debugging
+
+## 22. Implementation Roadmap
+### Phase 1: Baseline
+- Build ingestion pipeline.
+- Build BM25 retrieval.
+- Add simple rule-based domain classification.
+- Add minimal reply/escalate logic.
+- Output CSV.
+
+### Phase 2: Strong Core
+- Add dense retrieval.
+- Add hybrid fusion.
+- Add state machine.
+- Add risk screen and support verification.
+- Add structured logging.
+
+### Phase 3: Differentiators
+- Add reranker.
+- Add contradiction detection.
+- Add multi-issue decomposition.
+- Add threshold calibration on labeled samples.
+- Add inspector/debug mode.
+
+## 23. Risks and Mitigations
+| Risk | Impact | Mitigation |
+|---|---|---|
+| Weak retrieval quality | Wrong answers or over-escalation | Hybrid retrieval, query rewriting, reranking |
+| Overuse of LLM | Hallucinations | Rule-first design, evidence gate |
+| Ambiguous domain | Misrouting | Domain confidence + ambiguity handling |
+| Sensitive cases answered unsafely | Major failure | Hard escalation rules |
+| Inconsistent outputs | Poor evaluation | Schema-bound outputs and deterministic settings |
+| Hard to explain in interview | Lower evaluation quality | State machine, logs, modular design |
+
+## 24. Acceptance Criteria
+The product is acceptable only if all of the following are true:
+- It runs fully from the terminal.[1]
+- It uses only the provided support corpus for factual grounding.[1]
+- It processes all provided tickets and writes a valid output CSV.[1]
+- It generates `log.txt` or equivalent transcript output required by the challenge.[1]
+- It reliably escalates high-risk, sensitive, and unsupported tickets.[1]
+- It does not invent policies or unsupported actions.[1]
+- It can be explained clearly in an AI Judge interview with reference to concrete modules, rules, and logs.[2]
+
+## 25. Final Recommended Product Positioning
+The final product should be positioned not as a generic support bot but as a **corpus-grounded multi-domain triage engine with deterministic safety routing**.[1]
+
+That positioning directly aligns with the challenge statement and gives a stronger story than basic RAG because it emphasizes controlled reasoning, safe escalation, and explainable support operations behavior under strict constraints.[1][2]
