@@ -1,6 +1,6 @@
 from rank_bm25 import BM25Okapi
 import numpy as np
-from sentence_transformers import SentenceTransformer, util
+from sentence_transformers import SentenceTransformer, util, CrossEncoder
 import torch
 import re
 
@@ -13,6 +13,13 @@ class SearchEngine:
         
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
         self.corpus_embeddings = self.model.encode(self.corpus_texts, convert_to_tensor=True, show_progress_bar=False)
+        
+        # NEW: Add reranker for better retrieval quality
+        try:
+            self.reranker = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
+            self.has_reranker = True
+        except:
+            self.has_reranker = False
 
     def _tokenize(self, text):
         return re.findall(r'\w+', text.lower())
@@ -134,14 +141,41 @@ class SearchEngine:
         results = []
         top_subset_indices = np.argsort(combined_scores)[::-1][:top_k]
         
-        # Increase minimum score threshold to filter out irrelevant results
-        for i in top_subset_indices:
-            score = float(combined_scores[i])
-            if score > 0.5:  # Increased from 0.35 to 0.5
-                results.append({
-                    "chunk": self.chunks[indices[i]],
-                    "score": score
-                })
+        # NEW: Rerank top results if reranker available
+        if self.has_reranker and len(top_subset_indices) > 0:
+            top_results = []
+            for i in top_subset_indices:
+                score = float(combined_scores[i])
+                if score > 0.5:
+                    top_results.append({
+                        "chunk": self.chunks[indices[i]],
+                        "score": score,
+                        "index": i
+                    })
+            
+            # Rerank top-20 if we have more than 7
+            if len(top_results) > 7:
+                pairs = [[query, r['chunk']['text'][:512]] for r in top_results[:20]]
+                rerank_scores = self.reranker.predict(pairs)
+                
+                for i, r in enumerate(top_results[:20]):
+                    # Combine original score (70%) with rerank score (30%)
+                    r['score'] = 0.7 * r['score'] + 0.3 * float(rerank_scores[i])
+                
+                # Re-sort by combined score
+                top_results = sorted(top_results, key=lambda x: x['score'], reverse=True)[:top_k]
+            
+            results = top_results
+        else:
+            # Fallback: use original scoring
+            for i in top_subset_indices:
+                score = float(combined_scores[i])
+                if score > 0.5:
+                    results.append({
+                        "chunk": self.chunks[indices[i]],
+                        "score": score
+                    })
+        
         return results
 
     def _expand_query(self, query):
@@ -176,3 +210,40 @@ class SearchEngine:
             if k in q:
                 query += " " + v
         return query
+    
+    def detect_contradictions(self, results):
+        """NEW: Detect if retrieved docs contradict each other"""
+        if len(results) < 2:
+            return False
+        
+        contradictions = []
+        
+        for i in range(len(results)):
+            for j in range(i+1, len(results)):
+                doc1 = results[i]['chunk']['text'].lower()
+                doc2 = results[j]['chunk']['text'].lower()
+                
+                # Check for contradictory keywords
+                if self._has_contradiction(doc1, doc2):
+                    contradictions.append((i, j))
+        
+        return len(contradictions) > 0
+    
+    def _has_contradiction(self, text1, text2):
+        """NEW: Detect semantic contradictions"""
+        contradictory_pairs = [
+            ('must', 'cannot'),
+            ('required', 'optional'),
+            ('always', 'never'),
+            ('yes', 'no'),
+            ('allowed', 'forbidden'),
+            ('supported', 'unsupported'),
+        ]
+        
+        for word1, word2 in contradictory_pairs:
+            if word1 in text1 and word2 in text2:
+                return True
+            if word2 in text1 and word1 in text2:
+                return True
+        
+        return False

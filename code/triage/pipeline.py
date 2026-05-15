@@ -44,6 +44,11 @@ class TriagePipeline:
         # 4. Retrieval - Search for Top-7 for balance
         search_results = self.search_engine.search(issue, domain=domain, top_k=7)
         
+        # NEW: Check for contradictions in retrieved docs
+        if search_results and self.search_engine.detect_contradictions(search_results):
+            decision = 'escalate'
+            justification = "Conflicting information found in documentation. Requires human review."
+        
         decision = 'reply'
         justification = "Direct documentation found."
         
@@ -87,7 +92,7 @@ class TriagePipeline:
                 response += "This involves a sensitive security or fraud matter that requires manual review."
             else:
                 response += "Our documentation does not have a direct answer for this specific case."
-
+        
         return {
             "ticket_id": ticket_id,
             "domain": domain,
